@@ -8,3 +8,5 @@ Run the following command in the terminal to download and install the Hyprland d
 ```bash
 
 ```
+
+## ⌨️ Keybinds
