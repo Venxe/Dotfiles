@@ -1,5 +1,10 @@
-# Hyprland Dotfiles for Arch Linux
+# sayimburak's Dotfiles for Hyprland
 
 This repository contains my personal dotfiles for setting up a customized Hyprland environment on Arch Linux. Hyprland is a dynamic tiling Wayland compositor that provides a modern, lightweight, and efficient experience.
 
-## Installation
+## ⚙️ Installation
+Run the following command in the terminal to download and install the wallpapers:
+### Arch Linux:
+```bash
+
+```
