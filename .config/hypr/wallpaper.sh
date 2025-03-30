@@ -19,6 +19,6 @@ main() {
     sed -i "s/^gradient_color_1 = .*/gradient_color_1 = '$color1'/" $cava_config
     sed -i "s/^gradient_color_2 = .*/gradient_color_2 = '$color2'/" $cava_config
     pkill -USR2 cava 2>/dev/null
-    source ~/.cache/wal/colors.sh && cp -r $wallpaper ~/Wallpapers/pywallpaper.jpg 
+    source ~/.cache/wal/colors.sh && cp -r $wallpaper ~Pictures/Wallpapers/pywallpaper.jpg 
 }
 main
