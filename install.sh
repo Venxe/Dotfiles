@@ -15,11 +15,10 @@ systemctl --user enable pipewire.service pipewire-pulse.service
 systemctl --user start pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
 
-wal -i ~/Dotfiles/wallpapers/pywallpaper.jpg -n
-
 hyprpm add https://github.com/virtcode/hypr-dynamic-cursors
 hyprpm enable dynamic-cursors
 
-sudo cp -a ~/Dotfiles/.config/* ~/.config/
+git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
+cp -a ~/Dotfiles/.config/* ~/.config/
 
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
