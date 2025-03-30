@@ -16,7 +16,7 @@ qogir-icon-theme materia-gtk-theme illogical-impulse-bibata-modern-classic-bin t
 bottom htop libreoffice-fresh spotify ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa \
 pipewire-jack pavucontrol pulsemixer gnome-network-displays gst-plugins-bad
 
-sudo reflector --country 'US' --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
