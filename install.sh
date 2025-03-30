@@ -1,5 +1,13 @@
 #!/bin/bash
 
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+sudo pacman -S base-devel
+makepkg -si
+cd ..
+
+sudo pacman -S cmake meson cpio pkg-config
+
 sudo chmod -R 777 $HOME
 
 yay -S reflector rsync python-pywal16 swww waybar swaync starship myfetch neovim python-pywalfox hypridle \
@@ -18,7 +26,11 @@ sudo systemctl enable avahi-daemon
 hyprpm add https://github.com/virtcode/hypr-dynamic-cursors
 hyprpm enable dynamic-cursors
 
-git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
-cp -a ~/Dotfiles/.config/* ~/.config/
+curl -O https://raw.githubusercontent.com/Venxe/Dotfiles/main/install.sh
+curl -L https://github.com/Venxe/Dotfiles/archive/refs/heads/main.zip -o dotfiles.zip
+unzip dotfiles.zip
+cp -a Dotfiles-main/.config/* ~/.config/
+
+rm -rf yay-bin dotfiles.zip Dotfiles-main install.sh
 
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
