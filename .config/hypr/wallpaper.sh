@@ -1,4 +1,5 @@
 #!/bin/bash
+
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers/walls"
 
 menu() {
