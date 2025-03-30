@@ -30,6 +30,9 @@ systemctl --user start pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
 
 echo -e "\033[34mInstalling configs...\033[0m"
+mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
+mkdir -p ~/Pictures/Wallpapers/walls
+curl -L https://github.com/Venxe/Dotfiles/blob/main/starship.toml -o ~/.config/starship.toml
 git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
 cp -a ~/Dotfiles/.config/* ~/.config/
 
