@@ -16,7 +16,7 @@ qogir-icon-theme materia-gtk-theme illogical-impulse-bibata-modern-classic-bin t
 bottom htop libreoffice-fresh spotify ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa \
 pipewire-jack pavucontrol pulsemixer gnome-network-displays gst-plugins-bad
 
-sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
+sudo reflector --country 'US' --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
@@ -26,11 +26,9 @@ sudo systemctl enable avahi-daemon
 hyprpm add https://github.com/virtcode/hypr-dynamic-cursors
 hyprpm enable dynamic-cursors
 
-curl -O https://raw.githubusercontent.com/Venxe/Dotfiles/main/install.sh
-curl -L https://github.com/Venxe/Dotfiles/archive/refs/heads/main.zip -o dotfiles.zip
-unzip dotfiles.zip
-cp -a Dotfiles-main/.config/* ~/.config/
+git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
+cp -a ~/Dotfiles/.config/* ~/.config/
 
-rm -rf yay-bin dotfiles.zip Dotfiles-main install.sh
+rm -rf yay-bin Dotfiles install.sh
 
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
