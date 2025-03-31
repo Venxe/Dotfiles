@@ -32,6 +32,6 @@ wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
 cp ~/Dotfiles/starship.toml ~/.config/starship.toml
 cp -a ~/Dotfiles/.config/* ~/.config/
 
-rm -rf yay-bin Dotfiles
+rm -rf Dotfiles yay-bin
 
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
