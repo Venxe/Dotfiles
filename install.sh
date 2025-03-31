@@ -8,7 +8,7 @@ cd ..
 
 sudo chmod -R 777 "$HOME"
 
-pacman -S cmake meson cpio pkg-config reflector rsync swww waybar swaync starship
+sudo pacman -S cmake meson cpio pkg-config reflector rsync swww waybar swaync starship
 fastfetch fish neovim hypridle hyprcursor hyprpicker hyprlock fd cava brightnessctl 
 nerd-fonts nwg-look materia-gtk-theme thunar gvfs tumbler eza bottom htop libreoffice-
 fresh ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa pipewire-
