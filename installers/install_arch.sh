@@ -13,7 +13,7 @@ sudo pacman -S base-devel
 makepkg -si
 cd ..
 
-yay -S $(<installers/yay-packages.txt) --noconfirm
+xargs -a installers/yay-packages.txt -r yay -S --noconfirm
 
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
