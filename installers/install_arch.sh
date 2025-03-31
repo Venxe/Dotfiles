@@ -3,7 +3,7 @@
 sudo chmod -R 777 "$HOME"
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S $(<installers/pacman-packages.txt)
+xargs -a installers/pacman-packages.txt sudo pacman -S
 
 flatpak install -y flathub $(<installers/flatpak-packages.txt) --noconfirm
 
