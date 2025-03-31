@@ -54,3 +54,4 @@ cmatrix
 bleachbit
 gst-plugins-bad
 brightnessctl
+nerd-fonts
