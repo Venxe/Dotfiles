@@ -8,11 +8,7 @@ cd ..
 
 sudo chmod -R 777 "$HOME"
 
-sudo pacman -S cmake meson cpio pkg-config reflector rsync swww waybar swaync starship
-fastfetch fish neovim hypridle hyprcursor hyprpicker hyprlock fd cava brightnessctl 
-nerd-fonts nwg-look materia-gtk-theme thunar gvfs tumbler eza bottom htop libreoffice-
-fresh ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa pipewire-
-jack pavucontrol pulsemixer gst-plugins-bad
+sudo pacman -S $(<packages.txt)
 
 yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-
 theme illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays 
