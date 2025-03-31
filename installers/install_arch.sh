@@ -30,7 +30,7 @@ cp -a home/.config/* ~/.config/
 
 cp installers/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
-wal -i ~/Dotfiles/installers/wall_archlinux.png -n  
+wal -i ~/Pictures/Wallpapers/walls/wall_archlinux.png -n  
 
 while true; do
     echo "Enter your password to change the shell to Fish:"
