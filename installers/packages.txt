@@ -55,5 +55,4 @@ pulsemixer
 gst-plugins-bad
 xarchiver
 vlc
-flatpak
 nerd-fonts
