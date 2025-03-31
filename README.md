@@ -4,7 +4,6 @@ This repository contains my personal dotfiles for setting up a customized Hyprla
 
 ## ⚙️ Installation
 Run the following command in the terminal to download and install the Hyprland dotfiles:
-### Arch Linux:
 ```bash
 git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x installers/install_arch.sh && ./installers/install_arch.sh
 ```
