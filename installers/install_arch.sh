@@ -8,7 +8,7 @@ cd ..
 
 sudo chmod -R 777 "$HOME"
 
-sudo pacman -S refrector
+sudo pacman -S reflector
 sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
 sudo pacman -S $(<installers/packages.txt)
