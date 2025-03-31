@@ -1,0 +1,11 @@
+7zip
+BleachBit
+asciiquarium
+cmatrix
+steam
+lutris
+thunderbird
+bitwarden
+vlc
+mpv
+obsidian
