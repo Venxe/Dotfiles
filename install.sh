@@ -25,12 +25,12 @@ sudo systemctl enable avahi-daemon
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
-cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
-cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
-wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
-
 cp ~/Dotfiles/starship.toml ~/.config/starship.toml
 cp -a ~/Dotfiles/.config/* ~/.config/
+
+cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
+cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
+wal -i ~/Pictures/Wallpapers/pywallpaper.png
 
 rm -rf "$HOME/Dotfiles"
 
