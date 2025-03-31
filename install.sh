@@ -11,7 +11,7 @@ echo -e "\033[34mInstalling essential packages...\033[0m"
 sudo pacman -S cmake meson cpio pkg-config
 
 echo -e "\033[34mSetting home directory permissions...\033[0m"
-sudo chmod -R 777 $HOME
+sudo chmod -R 777 "$HOME"
 
 echo -e "\033[34mInstalling packages using yay...\033[0m"
 yay -S reflector rsync python-pywal16 swww waybar swaync starship fastfetch neovim python-pywalfox hypridle \
@@ -33,16 +33,18 @@ echo -e "\033[34mInstalling configs...\033[0m"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
-curl -L https://raw.githubusercontent.com/Venxe/Dotfiles/main/wall_archlinux.jpeg -o ~/Pictures/Wallpapers/pywallpaper.jpg
-cp ~/Pictures/Wallpapers/pywallpaper.jpg ~/Pictures/Wallpapers/walls/wall_archlinux.jpeg
+# Yeni duvar kağıdını doğru RAW URL'den çekiyoruz
+curl -L https://raw.githubusercontent.com/Venxe/Dotfiles/main/wall_archlinux.png -o ~/Pictures/Wallpapers/pywallpaper.png
+cp ~/Pictures/Wallpapers/pywallpaper.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
 
+# Starship config dosyası da doğru şekilde indiriliyor
 curl -L https://raw.githubusercontent.com/Venxe/Dotfiles/main/starship.toml -o ~/.config/starship.toml
 
 git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
 cp -a ~/Dotfiles/.config/* ~/.config/
 
 echo -e "\033[34mApplying wallpaper and updating colors...\033[0m"
-wal -i ~/Pictures/Wallpapers/pywallpaper.jpg -n
+wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
 
 echo -e "\033[34mCleaning up temporary files...\033[0m"
 rm -rf yay-bin Dotfiles install.sh
