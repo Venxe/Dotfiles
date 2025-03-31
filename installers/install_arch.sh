@@ -2,7 +2,10 @@
 
 sudo chmod -R 777 "$HOME"
 
+sudo pacman -Syu --noconfirm
 sudo pacman -S $(<installers/packages.txt)
+
+flatpak install -y flathub com.github.tchx84.Flatseal io.github.flattool.Warehouse com.vysp3r.ProtonPlus
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -32,7 +35,16 @@ cp installers/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
 wal -i ~/Dotfiles/installers/wall_archlinux.png  
 wal -i ~/Dotfiles/installers/wall_archlinux.png -n  
 
-chsh -s /usr/bin/fish
+while true; do
+    echo "Enter your password to change the shell to Fish:"
+    if chsh -s /usr/bin/fish; then
+        echo "Shell successfully changed to Fish."
+        break
+    else
+        echo "Authentication failed! Please try again."
+        sleep 2
+    fi
+done
 
 rm -rf "$HOME/Dotfiles"
 
