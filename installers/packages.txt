@@ -41,3 +41,4 @@ pulsemixer
 gst-plugins-bad
 xarchiver
 vlc
+nerd-fonts
