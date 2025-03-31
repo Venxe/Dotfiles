@@ -5,11 +5,12 @@ pyprland
 wlogout
 clock-rs-git
 qogir-icon-theme
-qalculate-gtk
+kora-icon-theme
 illogical-impulse-bibata-modern-classic-bin
-gnome-network-displays
-proton-vpn-gtk-app
+qalculate-gtk
 myfetch
-spotify
 bastet
 pipes-rs
+spotify
+gnome-network-displays
+proton-vpn-gtk-app
