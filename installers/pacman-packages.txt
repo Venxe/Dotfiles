@@ -36,6 +36,7 @@ pipewire-jack
 pavucontrol
 pulsemixer
 easyeffects
+lsp-plugins
 calf
 vlc
 mpv
