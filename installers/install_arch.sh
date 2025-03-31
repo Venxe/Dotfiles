@@ -3,9 +3,9 @@
 sudo chmod -R 777 "$HOME"
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S $(<installers/packages.txt)
+sudo pacman -S $(<installers/packages.txt) --noconfirm
 
-xargs -a installers/flatpak-packages.txt flatpak install -y
+flatpak install -y flathub $(<installers/flatpak-packages.txt)
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -13,9 +13,7 @@ sudo pacman -S base-devel
 makepkg -si
 cd ..
 
-yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-theme qalculate-gtk \
-illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays myfetch proton-vpn-gtk-app kora-icon-theme \
-bastet pipes-rs
+yay -S $(<installers/yay-packages.txt) --noconfirm
 
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
