@@ -5,7 +5,7 @@ sudo chmod -R 777 "$HOME"
 sudo pacman -Syu --noconfirm
 xargs -a installers/pacman-packages.txt sudo pacman -S
 
-flatpak install -y flathub $(<installers/flatpak-packages.txt) --noconfirm
+xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
