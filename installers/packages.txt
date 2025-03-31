@@ -45,7 +45,7 @@ easyeffects
 calf
 xarchiver
 7zip
-BleachBit
+bleachbit
 asciiquarium
 cmatrix
 steam
