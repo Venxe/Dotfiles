@@ -35,6 +35,8 @@ pipewire-alsa
 pipewire-jack
 pavucontrol
 pulsemixer
+easyeffects
+calf
 vlc
 mpv
 cava
