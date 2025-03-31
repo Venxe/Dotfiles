@@ -8,7 +8,8 @@ cd ..
 
 sudo chmod -R 777 "$HOME"
 
-sudo pacman -Sy --needed $(<installers/packages.txt)
+sudo pacman -S $(<installers/packages.txt)
+sudo pacman -S flatpak virt-manager easyeffects calf 7zip bleachbit asciiquarium cmatrix steam lutris thunderbird bitwarden mpv obsidian nerd-fonts pacman-contrib
 
 yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-theme qalculate-gtk \
 illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays myfetch proton-vpn-gtk-app kora-icon-theme \
