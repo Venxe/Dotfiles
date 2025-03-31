@@ -6,6 +6,7 @@ sudo pacman -S base-devel
 makepkg -si
 cd ..
 
+chsh -s /usr/bin/fish
 sudo pacman -S cmake meson cpio pkg-config
 sudo chmod -R 777 "$HOME"
 
