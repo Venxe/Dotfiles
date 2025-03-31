@@ -6,14 +6,16 @@ sudo pacman -S base-devel
 makepkg -si
 cd ..
 
-sudo pacman -S cmake meson cpio pkg-config
 sudo chmod -R 777 "$HOME"
 
-yay -S reflector rsync python-pywal16 swww waybar swaync starship fastfetch fish neovim python-pywalfox hypridle \
-hyprcursor hyprpicker hyprshot hyprlock pyprland wlogout fd cava brightnessctl clock-rs-git nerd-fonts nwg-look \
-qogir-icon-theme materia-gtk-theme illogical-impulse-bibata-modern-classic-bin thunar gvfs tumbler eza \
-bottom htop libreoffice-fresh spotify ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa \
-pipewire-jack pavucontrol pulsemixer gnome-network-displays gst-plugins-bad
+pacman -S cmake meson cpio pkg-config reflector rsync swww waybar swaync starship
+fastfetch fish neovim hypridle hyprcursor hyprpicker hyprlock fd cava brightnessctl 
+nerd-fonts nwg-look materia-gtk-theme thunar gvfs tumbler eza bottom htop libreoffice-
+fresh ncspot discord code blueman bluez pipewire pipewire-pulse pipewire-alsa pipewire-
+jack pavucontrol pulsemixer gst-plugins-bad
+
+yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-
+theme illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays 
 
 sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
