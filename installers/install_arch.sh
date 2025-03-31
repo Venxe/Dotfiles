@@ -5,7 +5,7 @@ sudo chmod -R 777 "$HOME"
 sudo pacman -Syu --noconfirm
 sudo pacman -S $(<installers/packages.txt)
 
-flatpak install -y flathub com.github.tchx84.Flatseal io.github.flattool.Warehouse com.vysp3r.ProtonPlus
+xargs -a installers/flatpak-packages.txt flatpak install -y
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
