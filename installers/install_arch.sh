@@ -29,8 +29,8 @@ cp -a home/.config/* ~/.config/
 
 cp installers/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
-wal -i ~/Pictures/Wallpapers/pywallpaper.png
-wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
+wal -i ~/Dotfiles/installers/wall_archlinux.png  
+wal -i ~/Dotfiles/installers/wall_archlinux.png -n  
 
 chsh -s /usr/bin/fish
 
