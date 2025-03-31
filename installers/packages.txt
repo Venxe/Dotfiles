@@ -1,6 +1,7 @@
 reflector
 pacman-contrib
 rsync
+flatpak
 fish
 starship
 fastfetch
