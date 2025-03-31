@@ -17,7 +17,7 @@ yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qog
 illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays myfetch proton-vpn-gtk-app kora-icon-theme \
 bastet pipes-rs
 
-sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
+sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
