@@ -40,7 +40,6 @@ pipewire-jack
 pavucontrol
 pulsemixer
 gst-plugins-bad
-pacman-contrib
 flatpak
 virt-manager
 easyeffects
@@ -57,3 +56,4 @@ bitwarden
 vlc
 mpv
 obsidian
+pacman-contrib
