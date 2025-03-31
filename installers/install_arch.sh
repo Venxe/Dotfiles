@@ -33,4 +33,6 @@ wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
 
 chsh -s /usr/bin/fish
 
+rm -rf "$HOME/Dotfiles"
+
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
