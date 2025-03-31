@@ -9,7 +9,6 @@ xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninte
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-sudo pacman -S base-devel
 makepkg -si
 cd ..
 
