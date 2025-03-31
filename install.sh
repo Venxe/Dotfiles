@@ -38,6 +38,9 @@ curl -L https://github.com/Venxe/Dotfiles/blob/main/starship.toml -o ~/.config/s
 git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
 cp -a ~/Dotfiles/.config/* ~/.config/
 
+echo -e "\033[34mApplying wallpaper and updating colors...\033[0m"
+wal -i ~/Pictures/Wallpapers/pywallpaper.jpg -n
+
 echo -e "\033[34mCleaning up temporary files...\033[0m"
 rm -rf yay-bin Dotfiles install.sh
 
