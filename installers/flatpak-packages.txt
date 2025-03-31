@@ -1,0 +1,4 @@
+flathub com.github.tchx84.Flatseal
+flathub io.github.flattool.Warehouse
+flathub com.vysp3r.ProtonPlus
+flathub org.localsend.localsend_app
