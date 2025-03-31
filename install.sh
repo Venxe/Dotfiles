@@ -33,20 +33,20 @@ echo -e "\033[34mInstalling configs...\033[0m"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
-# Yeni duvar kağıdını doğru RAW URL'den çekiyoruz
-curl -L https://raw.githubusercontent.com/Venxe/Dotfiles/main/wall_archlinux.png -o ~/Pictures/Wallpapers/pywallpaper.png
-cp ~/Pictures/Wallpapers/pywallpaper.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
+# Duvar kağıdını yerel Dotfiles deponuzdan alıyoruz
+cp ~/Dotfiles/wallpapers/pywallpaper.png ~/Pictures/Wallpapers/pywallpaper.png
+cp ~/Dotfiles/wallpapers/pywallpaper.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
 
-# Starship config dosyası da doğru şekilde indiriliyor
+# Starship config dosyasını doğru şekilde indiriyoruz
 curl -L https://raw.githubusercontent.com/Venxe/Dotfiles/main/starship.toml -o ~/.config/starship.toml
 
-git clone https://github.com/Venxe/Dotfiles.git ~/Dotfiles
+# Dotfiles depo klasörünü mevcut yerel dosya üzerinden kullanıyoruz
 cp -a ~/Dotfiles/.config/* ~/.config/
 
 echo -e "\033[34mApplying wallpaper and updating colors...\033[0m"
 wal -i ~/Pictures/Wallpapers/pywallpaper.png -n
 
 echo -e "\033[34mCleaning up temporary files...\033[0m"
-rm -rf yay-bin Dotfiles install.sh
+rm -rf yay-bin install.sh
 
 notify-send "Setup Completed" "Installation successful. Restart for changes to take effect."
