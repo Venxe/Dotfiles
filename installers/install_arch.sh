@@ -10,8 +10,8 @@ sudo chmod -R 777 "$HOME"
 
 sudo pacman -S $(<installers/packages.txt)
 
-yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-theme \
-illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays
+yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-theme
+illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays myfetch
 
 sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
