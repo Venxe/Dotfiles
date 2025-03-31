@@ -1,14 +1,14 @@
 #!/bin/bash
 
+sudo chmod -R 777 "$HOME"
+
+sudo pacman -S $(<installers/packages.txt)
+
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 sudo pacman -S base-devel
 makepkg -si
 cd ..
-
-sudo chmod -R 777 "$HOME"
-
-sudo pacman -S $(<installers/packages.txt)
 
 yay -S python-pywal16 python-pywalfox hyprshot pyprland wlogout clock-rs-git qogir-icon-theme qalculate-gtk \
 illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays myfetch proton-vpn-gtk-app kora-icon-theme \
