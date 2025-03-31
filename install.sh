@@ -15,8 +15,6 @@ theme illogical-impulse-bibata-modern-classic-bin spotify gnome-network-displays
 
 sudo reflector --country "US" --country "DE" --country "TR" --country "GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist
 
-chsh -s /usr/bin/fish
-
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
 systemctl --user start pipewire.service pipewire-pulse.service
@@ -32,6 +30,8 @@ cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp ~/Dotfiles/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
 wal -i ~/Dotfiles/wall_archlinux.png
 wal -i ~/Dotfiles/wall_archlinux.png -n
+
+chsh -s /usr/bin/fish
 
 rm -rf "$HOME/Dotfiles"
 
