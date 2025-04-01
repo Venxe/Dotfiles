@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Author: Jesse Mirabel (@sejjy)
-# GitHub: https://github.com/sejjy/mechabar
-
 # Rofi config
 config="$HOME/.config/rofi/bluetooth-menu.rasi"
 
