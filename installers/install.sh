@@ -24,7 +24,7 @@ error_exit() {
 }
 
 echo "${CYAN}Setting permissions for the home directory...${RESET}"
-sudo chmod -R u+rwX,go-rwx "$HOME" || error_exit "Failed to set permissions!"
+sudo chmod -R 777 "$HOME" || error_exit "Failed to set permissions!"
 
 echo "${CYAN}Updating package manager...${RESET}"
 sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
