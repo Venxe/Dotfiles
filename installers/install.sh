@@ -1,4 +1,5 @@
 #!/bin/bash
+exec > >(tee -a script.log) 2>&1
 
 clear
 
