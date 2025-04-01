@@ -46,7 +46,7 @@ cp -a home/.config/* ~/.config/
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
+wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
