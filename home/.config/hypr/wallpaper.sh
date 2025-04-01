@@ -15,10 +15,16 @@ main() {
     pywalfox update
     color1=$(awk 'match($0, /color2=\47(.*)\47/,a) { print a[1] }' ~/.cache/wal/colors.sh)
     color2=$(awk 'match($0, /color3=\47(.*)\47/,a) { print a[1] }' ~/.cache/wal/colors.sh)
+    color3=$(awk 'match($0, /color4=\47(.*)\47/,a) { print a[1] }' ~/.cache/wal/colors.sh)
+    color4=$(awk 'match($0, /color5=\47(.*)\47/,a) { print a[1] }' ~/.cache/wal/colors.sh)
+    
     cava_config="$HOME/.config/cava/config"
     sed -i "s/^gradient_color_1 = .*/gradient_color_1 = '$color1'/" $cava_config
     sed -i "s/^gradient_color_2 = .*/gradient_color_2 = '$color2'/" $cava_config
+    sed -i "s/^gradient_color_3 = .*/gradient_color_3 = '$color3'/" $cava_config
+    sed -i "s/^gradient_color_4 = .*/gradient_color_4 = '$color4'/" $cava_config
+    
     pkill -USR2 cava 2>/dev/null
-    source ~/.cache/wal/colors.sh && cp -r $wallpaper ~/Pictures/Wallpapers/pywallpaper.png
+    source ~/.cache/wal/colors.sh && cp -r $wallpaper ~/wallpapers/pywallpaper.png
 }
 main
