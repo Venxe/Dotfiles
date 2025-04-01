@@ -27,9 +27,9 @@ mkdir -p ~/Pictures/Wallpapers/walls
 cp home/starship.toml ~/.config/starship.toml
 cp -a home/.config/* ~/.config/
 
-cp installers/wall_archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
-cp installers/wall_archlinux.png ~/Pictures/Wallpapers/walls/wall_archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall_archlinux.png -n  
+cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
+cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
+wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
 
 while true; do
     echo "Enter your password to change the shell to Fish:"
