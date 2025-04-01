@@ -7,7 +7,6 @@ starship
 fastfetch
 eza
 bottom
-htop
 fd
 swww
 waybar
@@ -15,7 +14,6 @@ swaync
 nwg-look
 materia-gtk-theme
 hypridle
-hyprcursor
 hyprpicker
 hyprlock
 thunar
@@ -28,17 +26,11 @@ code
 cmake
 meson
 cpio
-pkg-config
-pipewire
-pipewire-pulse
-pipewire-alsa
-pipewire-jack
 pavucontrol
 pulsemixer
 easyeffects
 lsp-plugins
 calf
-vlc
 mpv
 cava
 libreoffice-fresh
