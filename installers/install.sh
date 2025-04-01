@@ -11,7 +11,7 @@ echo "${CYAN}Setting permissions for the home directory...${RESET}"
 sudo chmod -R 777 "$HOME" || { echo "${RED}Error: Failed to set permissions!${RESET}"; exit 1; }
 
 echo "${CYAN}Updating package manager...${RESET}"
-sudo pacman -Syu --noconfirm || { echo "${RED}Error: Failed to update package manager!${RESET}"; exit 1; }
+sudo pacman -Syu || { echo "${RED}Error: Failed to update package manager!${RESET}"; exit 1; }
 
 echo "${CYAN}Installing essential Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt sudo pacman -S --noconfirm || { echo "${RED}Error: Failed to install Pacman packages!${RESET}"; exit 1; }
