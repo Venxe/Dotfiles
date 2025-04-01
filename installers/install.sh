@@ -14,17 +14,21 @@ echo "${CYAN}Updating package manager...${RESET}"
 sudo pacman -Syu --noconfirm || { echo "${RED}Error: Failed to update package manager!${RESET}"; exit 1; }
 
 echo "${CYAN}Installing essential Pacman packages...${RESET}"
-xargs -a installers/pacman-packages.txt sudo pacman -S || { echo "${RED}Error: Failed to install Pacman packages!${RESET}"; exit 1; }
+xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || { echo "${RED}Error: Failed to install Pacman packages!${RESET}"; exit 1; }
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
 xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || { echo "${RED}Error: Failed to install Flatpak applications!${RESET}"; exit 1; }
 
 echo "${CYAN}Installing Yay AUR helper...${RESET}"
-git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm || { echo "${RED}Error: Failed to install Yay!${RESET}"; exit 1; }
-cd ..
+if ! command -v yay &> /dev/null; then
+    git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm || { echo "${RED}Error: Failed to install Yay!${RESET}"; exit 1; }
+    cd ..
+else
+    echo "${GREEN}Yay is already installed, skipping.${RESET}"
+fi
 
 echo "${CYAN}Installing Yay packages...${RESET}"
-xargs -a installers/yay-packages.txt -r yay -S --noconfirm || { echo "${RED}Error: Failed to install Yay packages!${RESET}"; exit 1; }
+xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || { echo "${RED}Error: Failed to install Yay packages!${RESET}"; exit 1; }
 
 echo "${CYAN}Optimizing mirror list...${RESET}"
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || { echo "${RED}Error: Failed to optimize mirrors!${RESET}"; exit 1; }
@@ -46,8 +50,7 @@ cp -a home/.config/* ~/.config/
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n
+wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
