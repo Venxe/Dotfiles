@@ -2,6 +2,8 @@
 
 clear
 
+sudo -v
+
 LOG_FILE="setup_log.txt"
 echo -e "\e[36m"
 cat << "EOF"
