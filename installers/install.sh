@@ -1,8 +1,5 @@
 #!/bin/bash
 
-export TMOUT=0
-export SYSTEMD_PAGER=""
-
 # Define colors for output
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
