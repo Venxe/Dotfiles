@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export TMOUT=0
+
 # Define colors for output
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
