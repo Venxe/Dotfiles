@@ -18,11 +18,6 @@ YELLOW=$(tput setaf 3)
 CYAN=$(tput setaf 6)
 RESET=$(tput sgr0)
 
-if ! sudo -v; then
-    echo "${RED}Error: Root access required!${RESET}"
-    exit 1
-fi
-
 echo "${CYAN}Setting permissions for the home directory...${RESET}"
 sudo chmod -R 777 "$HOME" || { echo "${RED}Error: Failed to set permissions!${RESET}"; exit 1; }
 
