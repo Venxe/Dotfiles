@@ -48,11 +48,11 @@ echo "${CYAN}Installing Yay packages...${RESET}"
 xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
 echo "${CYAN}Optimizing mirror list...${RESET}"
-sudo reflector --country "US,DE,TR,GR" --latest 10 --sort rate --fastest 5 --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
+sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
 
 echo "${CYAN}Enabling system services...${RESET}"
-systemctl is-enabled bluetooth || sudo systemctl enable bluetooth
-systemctl --user is-enabled pipewire.service || systemctl --user enable pipewire.service
+systemctl enable bluetooth
+systemctl --user enable pipewire.service pipewire-pulse.service
 systemctl --user start pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
 
@@ -67,7 +67,7 @@ cp -a home/.config/* ~/.config/
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n
+wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
