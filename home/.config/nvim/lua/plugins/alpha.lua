@@ -53,6 +53,11 @@ return {
 
         require("alpha").setup(applyColors({
 
+            [[╭━╮╱╱╱╱╭╮╱╱╭╮╱╱╱╱╱╱╱╭╮]],
+            [[┃━╋━╮╭┳╋╋━━┫╰┳┳┳┳┳━╮┃┣╮]],
+            [[┣━┃╋╰┫┃┃┃┃┃┃╋┃┃┃╭┫╋╰┫━┫]],
+            [[╰━┻━━╋╮┣┻┻┻┻━┻━┻╯╰━━┻┻╯]],
+            [[╱╱╱╱╱╰━╯]],
             [[N  E  O  V  I  M    ]],
         }, {
                 ["a"] = { fg = color9, ctermfg = 33},
@@ -61,8 +66,8 @@ return {
                 ["d"] = { fg = color5, ctermfg = 33},
                 ["e"] = { fg = color6, ctermfg = 33},
             }, {
-                [[d  d  d  e  e  e    ]],
             }))
+        
         dashboard.section.buttons.val = {
             dashboard.button( "e", "  > New file" , ":ene <BAR> startinsert <CR>"),
             dashboard.button( "f", "󰱼  > Find file", ":lua require('telescope.builtin').find_files({ find_command = { 'rg', '--files' } })<CR>"),
@@ -72,13 +77,11 @@ return {
             dashboard.button( "l", "󰒲 > Lazy", ":Lazy<CR>"),
             dashboard.button( "h", "  > Settings" , ":cd ~/.config/hypr | Telescope find_files<CR>"),
             dashboard.button( "q", "  > Quit", ":qa<CR>"),
-
-
         }
+
         dashboard.section.footer.val = {
             "",
             "Welcome!",
         }
-
     end,
 }
