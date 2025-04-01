@@ -2,7 +2,7 @@
 
 clear
 
-echo -e "\e[36m"  # Cyan renk
+echo -e "\e[36m"
 cat << "EOF"
 
 ┌─┐┌─┐┬ ┬┬┌┬┐┌┐ ┬ ┬┬─┐┌─┐┬┌─ ┐┌─┐  ╔╦╗┌─┐┌┬┐┌─┐┬┬  ┌─┐┌─┐
@@ -10,9 +10,8 @@ cat << "EOF"
 └─┘┴ ┴ ┴ ┴┴ ┴└─┘└─┘┴└─┴ ┴┴ ┴  └─┘  ═╩╝└─┘ ┴ └  ┴┴─┘└─┘└─┘
 
 EOF
-echo -e "\e[0m"  # Renk sıfırla
+echo -e "\e[0m"
 
-# Define colors for output
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
