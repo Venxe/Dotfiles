@@ -18,35 +18,41 @@ YELLOW=$(tput setaf 3)
 CYAN=$(tput setaf 6)
 RESET=$(tput sgr0)
 
+error_exit() {
+    echo -e "${RED}Error: $1${RESET}" >&2
+    exit 1
+}
+
 echo "${CYAN}Setting permissions for the home directory...${RESET}"
-sudo chmod -R 777 "$HOME" || { echo "${RED}Error: Failed to set permissions!${RESET}"; exit 1; }
+sudo chmod -R u+rwX,go-rwx "$HOME" || error_exit "Failed to set permissions!"
 
 echo "${CYAN}Updating package manager...${RESET}"
-sudo pacman -Syu --noconfirm || { echo "${RED}Error: Failed to update package manager!${RESET}"; exit 1; }
+sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
 
 echo "${CYAN}Installing essential Pacman packages...${RESET}"
-xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || { echo "${RED}Error: Failed to install Pacman packages!${RESET}"; exit 1; }
+xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || error_exit "Failed to install Pacman packages!"
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
-xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || { echo "${RED}Error: Failed to install Flatpak applications!${RESET}"; exit 1; }
+xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
 
 echo "${CYAN}Installing Yay AUR helper...${RESET}"
 if ! command -v yay &> /dev/null; then
-    git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si --noconfirm || { echo "${RED}Error: Failed to install Yay!${RESET}"; exit 1; }
-    cd ..
+    git clone https://aur.archlinux.org/yay-bin.git && pushd yay-bin
+    makepkg -si --noconfirm || error_exit "Failed to install Yay!"
+    popd
 else
     echo "${GREEN}Yay is already installed, skipping.${RESET}"
 fi
 
 echo "${CYAN}Installing Yay packages...${RESET}"
-xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || { echo "${RED}Error: Failed to install Yay packages!${RESET}"; exit 1; }
+xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
 echo "${CYAN}Optimizing mirror list...${RESET}"
-sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || { echo "${RED}Error: Failed to optimize mirrors!${RESET}"; exit 1; }
+sudo reflector --country "US,DE,TR,GR" --latest 10 --sort rate --fastest 5 --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
 
 echo "${CYAN}Enabling system services...${RESET}"
-systemctl enable bluetooth
-systemctl --user enable pipewire.service pipewire-pulse.service
+systemctl is-enabled bluetooth || sudo systemctl enable bluetooth
+systemctl --user is-enabled pipewire.service || systemctl --user enable pipewire.service
 systemctl --user start pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
 
@@ -61,7 +67,7 @@ cp -a home/.config/* ~/.config/
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
+wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
