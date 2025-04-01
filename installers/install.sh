@@ -19,7 +19,7 @@ YELLOW=$(tput setaf 3)
 CYAN=$(tput setaf 6)
 RESET=$(tput sgr0)
 
-echo "${CYAN}Setting permissions for the home directory...${RESET}"
+echo "${CYAN}Sᴇᴛᴛɪɴɢ ᴘᴇʀᴍɪssɪᴏɴs ғᴏʀ ᴛʜᴇ ʜᴏᴍᴇ ᴅɪʀᴇᴄᴛᴏʀʏ...${RESET}"
 sudo chmod -R 777 "$HOME" || { echo "${RED}Error: Failed to set permissions!${RESET}"; exit 1; }
 
 echo "${CYAN}Updating package manager...${RESET}"
