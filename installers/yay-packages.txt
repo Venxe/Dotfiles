@@ -14,3 +14,4 @@ pipes-rs
 spotify
 gnome-network-displays
 proton-vpn-gtk-app
+nodejs
