@@ -50,12 +50,6 @@ xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exi
 echo "${CYAN}Optimizing mirror list...${RESET}"
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
 
-echo "${CYAN}Enabling system services...${RESET}"
-systemctl enable bluetooth
-systemctl --user enable pipewire.service pipewire-pulse.service
-systemctl --user start pipewire.service pipewire-pulse.service
-sudo systemctl enable avahi-daemon
-
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
@@ -80,6 +74,12 @@ while true; do
         sleep 2
     fi
 done
+
+echo "${CYAN}Enabling system services...${RESET}"
+systemctl enable bluetooth
+systemctl --user enable pipewire.service pipewire-pulse.service
+systemctl --user start pipewire.service pipewire-pulse.service
+sudo systemctl enable avahi-daemon
 
 echo "${CYAN}Cleaning up Dotfiles directory...${RESET}"
 rm -rf "$HOME/Dotfiles"
