@@ -43,6 +43,7 @@ discord
 bitwarden
 steam
 lutris
+ncspot
 blueman
 bluez
 obsidian
