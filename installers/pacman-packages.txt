@@ -33,6 +33,7 @@ lsp-plugins
 calf
 mpv
 cava
+swayimg
 libreoffice-fresh
 thunderbird
 discord
