@@ -7,6 +7,7 @@ starship
 fastfetch
 eza
 bottom
+btop
 fd
 swww
 waybar
