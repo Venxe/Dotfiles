@@ -1,4 +1,5 @@
 com.github.tchx84.Flatseal
 io.github.flattool.Warehouse
-com.vysp3r.ProtonPlus
+io.github.hrkfdn.ncspot
 org.localsend.localsend_app
+com.vysp3r.ProtonPlus
