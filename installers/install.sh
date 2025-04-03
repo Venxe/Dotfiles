@@ -55,6 +55,8 @@ mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
+sudo cp -a dotcfg/sb-theme/* /usr/share/sddm/themes/
+sudo cp -a dotcfg/sddm.conf/* /etc/sddm.conf
 sudo cp -a dotcfg/.wofi-fix/* /usr/share/applications/
 cp -a dotcfg/.config/* ~/.config/
 
