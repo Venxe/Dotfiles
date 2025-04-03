@@ -55,12 +55,12 @@ mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
-cp home/starship.toml ~/.config/starship.toml
-cp -a home/.config/* ~/.config/
+cp dotcfg/starship.toml ~/.config/starship.toml
+cp -a dotcfg/.config/* ~/.config/
 
 echo "${CYAN}Setting default wallpaper...${RESET}"
-cp installers/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
-cp installers/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
+cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
+cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
