@@ -55,7 +55,7 @@ mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
-cp dotcfg/starship.toml ~/.config/starship.toml
+sudo cp -a dotcfg/.wofi-fix/* /usr/share/applications/
 cp -a dotcfg/.config/* ~/.config/
 
 echo "${CYAN}Setting default wallpaper...${RESET}"
