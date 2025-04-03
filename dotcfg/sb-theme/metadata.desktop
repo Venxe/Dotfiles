@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=sb-theme
+Description=sayimburak's theme
+Author=sayimburak
+Website=https://github.com/sayimburak/Dotfiles
+License=MIT
+Type=sddm-theme
+Version=1.0
+ConfigFile=Themes/sb-theme.conf
+Screenshot=Previews/abstract-neon-leaves-01.jpg
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=sb-theme
+Theme-API=2.0
+QtVersion=6
