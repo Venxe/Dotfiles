@@ -14,6 +14,7 @@ waybar
 swaync
 nwg-look
 materia-gtk-theme
+ttf-fira-sans
 ttf-firacode-nerd
 hypridle
 hyprpicker
