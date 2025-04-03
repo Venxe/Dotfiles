@@ -14,6 +14,7 @@ waybar
 swaync
 nwg-look
 materia-gtk-theme
+ttf-firacode-nerd
 hypridle
 hyprpicker
 hyprlock
@@ -50,4 +51,3 @@ cmatrix
 bleachbit
 gst-plugins-bad
 brightnessctl
-nerd-fonts
