@@ -37,6 +37,7 @@ calf
 mpv
 cava
 swayimg
+obs-studio
 libreoffice-fresh
 thunderbird
 discord
