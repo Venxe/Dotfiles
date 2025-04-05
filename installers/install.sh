@@ -62,6 +62,17 @@ sudo bash -c '
 '
 cp -a dotcfg/.config/* ~/.config/
 
+# wofi lsp-hider
+for file in /usr/share/applications/in.lsp*.desktop; do
+  if [ -f "$file" ]; then
+    if grep -q "^Hidden=" "$file"; then
+      sudo sed -i "s/^Hidden=.*/Hidden=true/" "$file"
+    else
+      sudo sed -i "/^\[Desktop Entry\]/a Hidden=true" "$file"
+    fi
+  fi
+done
+
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
