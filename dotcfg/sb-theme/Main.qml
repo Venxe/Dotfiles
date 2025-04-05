@@ -267,11 +267,6 @@ Pane {
             id: blur
             
             height: parent.height
-
-            // width: config.FullBlur == "true" ? parent.width : form.width
-            // anchors.centerIn: config.FullBlur == "true" ? parent : form
-
-            // This solves problem when FullBlur and HaveFormBackground is set to true but PartialBlur is false and FormPosition isn't center.
             width: (config.FullBlur == "true" && config.PartialBlur == "false" && config.FormPosition != "center" ) ? parent.width - formBackground.width : config.FullBlur == "true" ? parent.width : form.width 
             anchors.centerIn: config.FullBlur == "true" ? backgroundImage : form
 
