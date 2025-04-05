@@ -1,4 +1,6 @@
 com.github.tchx84.Flatseal
 io.github.flattool.Warehouse
+dev.krtirtho.Flemozi
+io.github.halfmexican.Mingle
 org.localsend.localsend_app
 com.vysp3r.ProtonPlus
