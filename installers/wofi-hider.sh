@@ -13,9 +13,8 @@ done
 
 programs=(
 "avahi-discover"
-"bssh.desktop"
-"bvnc.desktop"
-
+"bssh"
+"bvnc"
 )
 
 for prog in "${programs[@]}"; do
