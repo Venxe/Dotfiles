@@ -59,8 +59,9 @@ sudo bash -c '
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/.wofi-fix /usr/share/applications/
-  bash ./lsp-hider.sh
 '
+
+bash ./lsp-hider.sh
 cp -a dotcfg/.config/* ~/.config/
 
 echo "${CYAN}Setting default wallpaper...${RESET}"
