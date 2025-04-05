@@ -42,6 +42,7 @@ libreoffice-fresh
 thunderbird
 discord
 bitwarden
+qbitttorent
 steam
 lutris
 ncspot
