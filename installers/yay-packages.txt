@@ -6,7 +6,6 @@ wlogout
 clock-rs-git
 qogir-icon-theme
 kora-icon-theme
-illogical-impulse-bibata-modern-classic-bin
 qalculate-gtk
 myfetch
 bastet
