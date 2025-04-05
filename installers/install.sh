@@ -61,7 +61,7 @@ sudo bash -c '
   cp -a dotcfg/wofi-fix /usr/share/applications/
 '
 
-chmod +x ./lsp-hider.sh
+chmod +x installers/lsp-hider.sh
 cp -a dotcfg/.config/* ~/.config/
 
 echo "${CYAN}Setting default wallpaper...${RESET}"
