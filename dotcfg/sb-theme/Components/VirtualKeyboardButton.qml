@@ -1,4 +1,3 @@
-// Config created by Keyitdev https://github.com/Keyitdev/sddm-astronaut-theme
 // Copyright (C) 2022-2025 Keyitdev
 // Distributed under the GPLv3+ License https://www.gnu.org/licenses/gpl-3.0.html
 
