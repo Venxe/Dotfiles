@@ -10,6 +10,5 @@ clock-rs-git
 myfetch
 pipes-rs
 bastet
-qalculate-gtk
 spotify
 proton-vpn-gtk-app
