@@ -1,5 +1,6 @@
 reflector
 pacman-contrib
+gnome-keyring
 rsync
 flatpak
 fish
