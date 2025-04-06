@@ -1,4 +1,3 @@
-python-pywal16
 python-pywalfox
 hyprshot
 pyprland
