@@ -51,7 +51,7 @@ echo "${CYAN}Optimizing mirror list...${RESET}"
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
 
 echo "${CYAN}Creating necessary directories...${RESET}"
-mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Music ~/Public ~/Templates ~/Videos
+mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
