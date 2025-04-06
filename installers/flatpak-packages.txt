@@ -2,6 +2,7 @@ com.github.tchx84.Flatseal
 io.github.flattool.Warehouse
 com.heroicgameslauncher.hgl
 org.localsend.localsend_app
+com.rustdesk.RustDesk
 com.vysp3r.ProtonPlus
 com.protonvpn.www
 io.github.Qalculate
