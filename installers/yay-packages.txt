@@ -3,13 +3,13 @@ python-pywalfox
 hyprshot
 pyprland
 wlogout
-clock-rs-git
+gnome-network-displays
 kora-icon-theme
 qogir-icon-theme
-qalculate-gtk
+clock-rs-git
 myfetch
-bastet
 pipes-rs
+bastet
+qalculate-gtk
 spotify
-gnome-network-displays
 proton-vpn-gtk-app
