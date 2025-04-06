@@ -2,9 +2,9 @@ com.github.tchx84.Flatseal
 io.github.flattool.Warehouse
 io.github.shiftey.Desktop
 com.heroicgameslauncher.hgl
+com.vysp3r.ProtonPlus
 org.localsend.localsend_app
 com.rustdesk.RustDesk
-com.vysp3r.ProtonPlus
 com.protonvpn.www
 org.torproject.torbrowser-launcher
 io.github.Qalculate
