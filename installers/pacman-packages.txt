@@ -52,6 +52,7 @@ bluez
 obsidian
 asciiquarium
 cmatrix
+lolcat
 bleachbit
 gst-plugins-bad
 brightnessctl
