@@ -1,5 +1,6 @@
 reflector
 pacman-contrib
+rsync
 flatpak
 fish
 starship
@@ -18,6 +19,7 @@ hypridle
 hyprpicker
 hyprlock
 thunar
+gvfs
 tumbler
 xarchiver
 7zip
