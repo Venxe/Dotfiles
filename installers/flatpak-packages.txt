@@ -3,5 +3,6 @@ io.github.flattool.Warehouse
 com.heroicgameslauncher.hgl
 org.localsend.localsend_app
 com.vysp3r.ProtonPlus
+io.github.Qalculate
 dev.krtirtho.Flemozi
 io.github.halfmexican.Mingle
