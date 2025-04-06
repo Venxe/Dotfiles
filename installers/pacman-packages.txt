@@ -30,7 +30,6 @@ code
 cmake
 meson
 cpio
-pavucontrol
 pulsemixer
 easyeffects
 lsp-plugins
