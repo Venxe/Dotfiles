@@ -90,16 +90,16 @@
 
                 {
                     "label": "󰈙",
-                    "command": "kitty bash -i -c 'Docs'"
+                    "command": "kitty fish -i -c 'Docs'"
                 },
                 {
                     "label": "",
-                    "command": "kitty bash -i -c 'Settings'"
+                    "command": "kitty fish -i -c 'Settings'"
                     
                 },
                 {
                     "label": "",
-                    "command": "kitty bash -i -c 'tasks'"
+                    "command": "kitty fish -i -c 'btop'"
 
                 },
                 {
