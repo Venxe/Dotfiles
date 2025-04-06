@@ -1,6 +1,5 @@
 reflector
 pacman-contrib
-gnome-keyring
 rsync
 flatpak
 fish
@@ -43,6 +42,7 @@ libreoffice-fresh
 thunderbird
 discord
 bitwarden
+gnome-keyring
 qbittorrent
 steam
 lutris
