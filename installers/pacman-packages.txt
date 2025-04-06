@@ -6,6 +6,7 @@ fish
 starship
 fastfetch
 eza
+bottom
 btop
 fd
 swww
