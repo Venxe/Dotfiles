@@ -11,4 +11,3 @@ myfetch
 pipes-rs
 bastet
 spotify
-proton-vpn-gtk-app
