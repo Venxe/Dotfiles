@@ -4,7 +4,6 @@ hyprshot
 pyprland
 wlogout
 clock-rs-git
-qogir-icon-theme
 kora-icon-theme
 qalculate-gtk
 myfetch
