@@ -5,6 +5,7 @@ org.localsend.localsend_app
 com.rustdesk.RustDesk
 com.vysp3r.ProtonPlus
 com.protonvpn.www
+org.torproject.torbrowser-launcher
 io.github.Qalculate
 dev.krtirtho.Flemozi
 io.github.halfmexican.Mingle
