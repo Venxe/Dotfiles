@@ -80,7 +80,7 @@
             ],
         },
         "custom/pacman": {
-            "format": "󰅢 {}",
+            "format": "󰅢\u0020{}",
             "interval": 30,   
             "exec": "checkupdates | wc -l",
             "exec-if": "exit 0",
