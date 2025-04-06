@@ -1,6 +1,7 @@
 com.github.tchx84.Flatseal
 io.github.flattool.Warehouse
-dev.krtirtho.Flemozi
-io.github.halfmexican.Mingle
+com.heroicgameslauncher.hgl
 org.localsend.localsend_app
 com.vysp3r.ProtonPlus
+dev.krtirtho.Flemozi
+io.github.halfmexican.Mingle
