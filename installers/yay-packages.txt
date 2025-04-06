@@ -4,6 +4,7 @@ pyprland
 wlogout
 clock-rs-git
 kora-icon-theme
+qogir-icon-theme
 qalculate-gtk
 myfetch
 bastet
