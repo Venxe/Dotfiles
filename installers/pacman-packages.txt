@@ -15,7 +15,7 @@ nwg-look
 materia-gtk-theme
 ttf-fira-sans
 ttf-firacode-nerd
-python-pywal16
+python-pywal
 hypridle
 hyprpicker
 hyprlock
