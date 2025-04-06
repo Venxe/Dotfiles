@@ -21,6 +21,9 @@ hyprlock
 thunar
 gvfs
 tumbler
+libgsf
+ffmpegthumbnailer
+libgepub
 xarchiver
 7zip
 neovim
