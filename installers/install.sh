@@ -29,7 +29,7 @@ sudo chmod -R 777 "$HOME" || error_exit "Failed to set permissions!"
 echo "${CYAN}Updating package manager...${RESET}"
 sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
 
-echo "${CYAN}Installing essential Pacman packages...${RESET}"
+echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || error_exit "Failed to install Pacman packages!"
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
@@ -54,13 +54,14 @@ echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
-echo "${CYAN}Copying configuration files...${RESET}"
+echo "${CYAN}Installing configuration files...${RESET}"
 sudo bash -c '
   cp -a dotcfg/resolved.conf /etc/systemd/resolved.conf &&
   cp -a dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
-  cp -a dotcfg/wofi-fix/. /usr/share/applications/
+  cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
+  sed -i "s/^#\s*ParallelDownloads\s*=\s*5/ParallelDownloads = 5/" /etc/pacman.conf
 '
 cp -a dotcfg/.config/* ~/.config/
 
