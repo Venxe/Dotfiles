@@ -56,7 +56,8 @@ mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
 sudo bash -c '
-  cp -a dotcfg/resolved.conf /etc/systemd/resolved.conf
+  cp -a dotcfg/resolved.conf /etc/systemd/resolved.conf &&
+  cp -a dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/wofi-fix/. /usr/share/applications/
