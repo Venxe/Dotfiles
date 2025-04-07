@@ -8,7 +8,7 @@ if not status is-interactive
 end
 
 alias lsd='eza --icons'
-alias pacup='sudo pacman -Rns (pacman -Qdtq)'
+alias pclean='sudo pacman -Rns (pacman -Qdtq)'
 alias grep='grep --color=auto'
 alias s='clear && myfetch -i s -f -c 16 -C "  "'
 alias bye='sudo shutdown -h now'
