@@ -7,12 +7,12 @@ if not status is-interactive
     return
 end
 
-alias lsd='eza --icons'
-alias pclean='sudo pacman -Rns (pacman -Qdtq)'
-alias grep='grep --color=auto'
 alias s='clear && myfetch -i s -f -c 16 -C "  "'
-alias bye='sudo shutdown -h now'
+alias pclean='sudo pacman -Rns (pacman -Qdtq)'
+alias lsd='eza --icons'
+alias grep='grep --color=auto'
 alias fonts='fc-list -f "%{family}\n"'
+alias bye='sudo shutdown -h now'
 alias Docs="cd ~/Documents && nvim"
 alias Settings="cd ~/.config/hypr && nvim"
 
@@ -22,4 +22,3 @@ if test -s "$NVM_DIR/nvm.sh"
 end
 
 set -g PS1 "[\u@\h \W]\$ "
-
