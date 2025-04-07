@@ -56,6 +56,7 @@ mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Copying configuration files...${RESET}"
 sudo bash -c '
+  cp -a dotcfg/resolved.conf /etc/systemd/resolved.conf
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/wofi-fix/. /usr/share/applications/
@@ -91,9 +92,9 @@ while true; do
 done
 
 echo "${CYAN}Enabling system services...${RESET}"
+systemctl enable --now fstrim.timer
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
-systemctl --user start pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
 
 echo "${CYAN}Cleaning up Dotfiles directory...${RESET}"
