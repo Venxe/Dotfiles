@@ -69,21 +69,22 @@
                     "type": "toggle"
                 },
                 {
+                    "label":"󰂛",
+		    "command": "swaync-client -d",
+                    "type":"toggle"
+                },
+                { 
+                    "label": "󰤄",
+   		    "command": "$HOME/.config/hypr/scripts/toggle-wlsunset.sh",
+                    "type": "toggle"
+                },
+                {
                     "label": "",
                     "command": "kitty nmtui"
                 },
                 {
                     "label": "",
                     "command": "blueman-manager"
-                },
-                {
-                    "label":"󰤄",
-                    "command": "swaync-client -d",
-                    "type":"toggle"
-                },
-                {
-                    "label": "󰈙",
-                    "command": "kitty fish -i -c 'Docs'"
                 },
                 {
                     "label": "󰀟",
