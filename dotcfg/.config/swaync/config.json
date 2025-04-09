@@ -68,7 +68,6 @@
                     "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
                     "type": "toggle"
                 },
-
                 {
                     "label": "",
                     "command": "kitty nmtui"
@@ -82,15 +81,13 @@
                     "command": "swaync-client -d",
                     "type":"toggle"
                 },
-
-                {
-                    "label": "󰀟",
-                    "command": "gnome-network-displays"
-                },
-
                 {
                     "label": "󰈙",
                     "command": "kitty fish -i -c 'Docs'"
+                },
+                {
+                    "label": "󰀟",
+                    "command": "gnome-network-displays"
                 },
                 {
                     "label": "",
