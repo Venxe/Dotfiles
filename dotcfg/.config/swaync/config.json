@@ -93,14 +93,14 @@
                     "command": "kitty fish -i -c 'Docs'"
                 },
                 {
-                    "label": "",
-                    "command": "kitty fish -i -c 'Settings'"
-                    
-                },
-                {
                     "label": "",
                     "command": "kitty fish -i -c 'btop'"
 
+                },
+                {
+                    "label": "",
+                    "command": "kitty fish -i -c 'Settings'"
+                    
                 },
                 {
                     "label": "",
