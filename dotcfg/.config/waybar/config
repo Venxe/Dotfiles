@@ -103,14 +103,7 @@
                 "transition-to-left": true,
                 "click-to-reveal": true
             },
-            "modules": ["custom/expand", "custom/wlsunset", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
-        },
-
-        "custom/wlsunset": {
-            "format": "󰔱",
-            "tooltip": "wlsunset aç/kapa",
-            "on-click": "~/.config/waybar/scripts/wlsunset-toggle.sh",
-            "interval": 1
+            "modules": ["custom/expand", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
         },
         "custom/colorpicker": {
             "format": "{}",
@@ -135,4 +128,4 @@
             "icon-size": 14,
             "spacing": 10
         },
-}
+} 
