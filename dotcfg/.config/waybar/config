@@ -103,8 +103,16 @@
                 "transition-to-left": true,
                 "click-to-reveal": true
             },
-            "modules": ["custom/expand", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
+            "modules": ["custom/expand", "custom/wlsunset", "custom/colorpicker","cpu","memory","temperature","custom/endpoint"],
         },
+
+       "custom/wlsunset": {
+           "format": "{}",
+            "exec": "echo '󰤄'",
+            "interval": "3600",
+            "on-click": "~/.config/waybar/scripts/toggle-wlsunset.sh",
+   	    "signal": 2
+	},
         "custom/colorpicker": {
             "format": "{}",
             "return-type": "json",

@@ -75,7 +75,7 @@
                 },
                 { 
                     "label": "󰤄",
-   		    "command": "$HOME/.config/hypr/scripts/toggle-wlsunset.sh",
+   		    "command": "",
                     "type": "toggle"
                 },
                 {
