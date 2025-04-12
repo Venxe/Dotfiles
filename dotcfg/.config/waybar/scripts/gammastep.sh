@@ -7,7 +7,7 @@ readonly LATITUDE="41.0082"
 readonly LONGITUDE="28.9784"
 readonly DAY_TEMP="3000"
 readonly NIGHT_TEMP="3000"
-readonly ICON=" \u0020"
+readonly ICON=" "
 
 toggle_gammastep() {
     if pgrep -x gammastep > /dev/null; then
