@@ -5,7 +5,7 @@ set -euo pipefail
 # Settings
 readonly LATITUDE="41.0082"
 readonly LONGITUDE="28.9784"
-readonly DAY_TEMP="3000"
+readonly DAY_TEMP="6500"
 readonly NIGHT_TEMP="3000"
 readonly ICON=""
 
