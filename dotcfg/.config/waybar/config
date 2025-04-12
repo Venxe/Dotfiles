@@ -115,10 +115,10 @@
             "signal": 1
         },
   	"custom/gammastep": {
+    	    "return-type": "json",
+    	    "interval": 1,
     	    "exec": "~/.config/waybar/scripts/gammastep.sh",
     	    "on-click": "~/.config/waybar/scripts/gammastep.sh toggle",
-    	    "interval": 1,
-    	    "return-type": "json",
     	    "markup": "pango"
 	},
         "cpu": {
