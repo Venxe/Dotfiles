@@ -50,7 +50,6 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color7;
-
 }
 #workspaces {
     padding: 0px 5px;
@@ -92,29 +91,23 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color7;
-
 }
 #network{
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color7;
-
 }
 #battery{
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color7;
-
-
 }
 #battery.charging {
     color: #26A65B;
 }
-
 #battery.warning:not(.charging) {
     color: #ffbe61;
 }
-
 #battery.critical:not(.charging) {
     color: #f53c3c;
     animation-name: blink;
@@ -160,7 +153,6 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease; 
 }
-
 #tray menu separator {
     padding: 0px 5px;
     transition: all .3s ease; 
