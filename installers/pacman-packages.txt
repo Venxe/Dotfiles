@@ -56,3 +56,4 @@ lolcat
 bleachbit
 gst-plugins-bad
 brightnessctl
+gammastep
