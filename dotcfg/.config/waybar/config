@@ -106,13 +106,6 @@
             "modules": ["custom/expand", "custom/colorpicker", "custom/gammastep", "cpu","memory", "temperature", "custom/endpoint"],
         },
 
-  	"custom/gammastep": {
-    	    "exec": "~/.config/waybar/scripts/gammastep.sh",
-    	    "on-click": "~/.config/waybar/scripts/gammastep.sh toggle",
-    	    "interval": 1,
-    	    "return-type": "json",
-    	    "markup": "pango"
-	},
         "custom/colorpicker": {
             "format": "{}",
             "return-type": "json",
@@ -121,6 +114,13 @@
             "on-click": "~/.config/waybar/scripts/colorpicker.sh",
             "signal": 1
         },
+  	"custom/gammastep": {
+    	    "exec": "~/.config/waybar/scripts/gammastep.sh",
+    	    "on-click": "~/.config/waybar/scripts/gammastep.sh toggle",
+    	    "interval": 1,
+    	    "return-type": "json",
+    	    "markup": "pango"
+	},
         "cpu": {
             "format": "󰻠",
             "tooltip": true
