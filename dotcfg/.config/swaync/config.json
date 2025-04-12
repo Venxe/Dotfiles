@@ -74,31 +74,28 @@
                     "type":"toggle"
                 },
                 { 
-                    "label": "󰤄",
-   		    "command": "",
-                    "type": "toggle"
+                    "label": "󱕵",
+		    "command": "setsid bitwarden-desktop >/dev/null 2>&1 & swaync-client --close-panel"
                 },
                 {
                     "label": "",
-                    "command": "kitty nmtui"
+                    "command": "kitty nmtui & swaync-client --close-panel"
                 },
                 {
                     "label": "",
-                    "command": "blueman-manager"
+                    "command": "blueman-manager & swaync-client --close-panel"
                 },
                 {
                     "label": "󰀟",
-                    "command": "gnome-network-displays"
+                    "command": "gnome-network-displays & swaync-client --close-panel"
                 },
                 {
                     "label": "",
-                    "command": "kitty fish -i -c 'btop'"
-
+                    "command": "kitty fish -i -c 'btop' & swaync-client --close-panel"
                 },
                 {
                     "label": "",
-                    "command": "kitty fish -i -c 'Settings'"
-                    
+                    "command": "kitty fish -i -c 'Settings' & swaync-client --close-panel"
                 },
                 {
                     "label": "",
@@ -112,7 +109,6 @@
                     "label":"",
                     "command": "shutdown now"
                 }
-
             ]
         }
     }
