@@ -22,9 +22,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + C`  - Force Close Window
 
+`SUPER + E`  - Open File Manager
+
 `SUPER + F`  - Fullscreen
 
-`SUPER + E`  - Open File Manager
+`SUPER + G`  - Audio Manager
 
 `SUPER + M` - Force Close Hyprland
 
