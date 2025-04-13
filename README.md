@@ -47,16 +47,27 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ## 🗃️ Installed Programs
 <details>
-<summary>📦 Package & System Management</summary>
+<summary>🔧 Core System Tools</summary>
 
 - **pacman-contrib**
+- **python-pywal16**
+- **python-pywalfox**
+- **hypridle**
+- **hyprlock**
+- **hyprpicker**
+- **hyprshot**
+- **pyprland**
+- **wlogout**
+- **waybar**
+- **swaync**
+- **swww**
+- **blueman**
+- **bluez**
 - **rsync**
-- **bleachbit**
+- **cmake**
+- **meson**
 - **brightnessctl**
 - **gammastep**
-- **flatpak**
-- **com.github.tchx84.Flatseal**
-- **io.github.flattool.Warehouse**
 </details>
 
 <details>
@@ -69,37 +80,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **fd**
 - **fastfetch**
 - **myfetch**
+- **clock-rs-git**
 - **asciiquarium**
 - **cmatrix**
 - **pipes-rs**
 - **lolcat**
-</details>
-
-<details>
-<summary>🎨 Visual & Theme Customization</summary>
-
-- **python-pywal16**
-- **python-pywalfox**
-- **materia-gtk-theme**
-- **kora-icon-theme**
-- **qogir-icon-theme**
-- **ttf-fira-sans**
-- **ttf-firacode-nerd**
-</details>
-
-<details>
-<summary>🖥️ Hyprland/Wayland Utilities</summary>
-
-- **hypridle**
-- **hyprlock**
-- **hyprpicker**
-- **hyprshot**
-- **pyprland**
-- **wlogout**
-- **waybar**
-- **swaync**
-- **swww**
-- **nwg-look**
 </details>
 
 <details>
@@ -116,14 +101,25 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 </details>
 
 <details>
-<summary>🛠️ Development & Build Tools</summary>
+<summary>🔒 Security & Privacy</summary>
 
-- **neovim**
-- **code**
-- **cmake**
-- **meson**
-- **lsp-plugins**
-- **io.github.shiftey.Desktop**
+- **bitwarden**
+- **qbittorrent**
+- **gnome-keyring**
+- **com.protonvpn.www**
+- **org.torproject.torbrowser-launcher**
+- **gnome-network-displays**
+</details>
+
+<details>
+<summary>🎨 Themes & Fonts</summary>
+
+- **materia-gtk-theme**
+- **kora-icon-theme**
+- **qogir-icon-theme**
+- **ttf-fira-sans**
+- **ttf-firacode-nerd**
+- **nwg-look**
 </details>
 
 <details>
@@ -134,6 +130,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **calf**
 - **mpv**
 - **cava**
+- **lsp-plugins**
 - **gst-plugins-bad**
 - **obs-studio**
 </details>
@@ -144,19 +141,16 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **libreoffice-fresh**
 - **thunderbird**
 - **obsidian**
+- **dev.krtirtho.Flemozi**
+- **io.github.halfmexican.Mingle**
 </details>
 
 <details>
-<summary>🔒 Security & Privacy</summary>
+<summary>🛠️ Development & Build Tools</summary>
 
-- **bitwarden**
-- **gnome-keyring**
-- **qbittorrent**
-- **blueman**
-- **bluez**
-- **com.protonvpn.www**
-- **org.torproject.torbrowser-launcher**
-- **gnome-network-displays**
+- **neovim**
+- **code**
+- **io.github.shiftey.Desktop**
 </details>
 
 <details>
@@ -174,15 +168,13 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 <details>
 <summary>🔗 Miscellaneous Tools</summary>
 
-- **clock-rs-git**
+- **bleachbit**
+- **flatpak**
+- **com.github.tchx84.Flatseal**
+- **io.github.flattool.Warehouse**
 - **io.github.Qalculate**
 - **org.localsend.localsend_app**
 - **com.rustdesk.RustDesk**
 </details>
 
-<details>
-<summary>🔍 Other / Unclassified Tools</summary>
-
-- **dev.krtirtho.Flemozi**
-- **io.github.halfmexican.Mingle**
 </details>
