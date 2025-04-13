@@ -162,13 +162,13 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 <details>
 <summary>🎮 Gaming & Entertainment</summary>
 
-- **lutris**
-- **com.heroicgameslauncher.hgl**
-- **com.vysp3r.ProtonPlus**
 - **discord**
 - **spotify**
 - **ncspot**
 - **bastet**
+- **lutris**
+- **com.heroicgameslauncher.hgl**
+- **com.vysp3r.ProtonPlus**
 </details>
 
 <details>
