@@ -5,7 +5,7 @@ This repository contains my personal dotfiles for setting up a highly customized
 The installation process is fully automated and specifically tailored to my personal workflow. **Manual installation support is not provided**, as this setup is designed to streamline and simplify the process for my unique use case.
 
 > [!WARNING]  
-> Running this setup may install software and configurations that could conflict with your preferences. You may want to review the script and dotfiles before proceeding.
+> Running this setup may install software and configurations that could conflict with your preferences. You may want to review the [install script](https://github.com/Venxe/Dotfiles/blob/main/installers/install.sh) before proceeding.
 
 
 ## ⚙️ Installation
@@ -17,9 +17,9 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ### Recomandations:
 
-- [**Wallpapers**](https://github.com/sayimburak/wallpapers) – My high quality wallpaper collection
+- [**Wallpapers**](https://github.com/sayimburak/wallpapers) – A curated collection of high-resolution wallpapers
 
-- [**GameMode**](https://github.com/FeralInteractive/gamemode) – Various optimizations
+- [**GameMode**](https://github.com/FeralInteractive/gamemode) – A range of performance and usability optimizations
 
 ## ⌨️ Keybinds
 
