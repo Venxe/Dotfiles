@@ -39,7 +39,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 `ALT + F4`  - Session Manager
 
 
-## 🗃️ Installed Programs:
+## 🗃️ Installed Programs
 <details>
 <summary>📦 Package & System Management</summary>
 
