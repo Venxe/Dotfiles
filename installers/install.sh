@@ -63,6 +63,7 @@ sudo bash -c '
   sed -i "s/^#\s*ParallelDownloads\s*=\s*5/ParallelDownloads = 5/" /etc/pacman.conf
 '
 cp -a dotcfg/.config/* ~/.config/
+cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
 # wofi lsp-hider
 for file in /usr/share/applications/in.lsp*.desktop; do
@@ -74,10 +75,6 @@ for file in /usr/share/applications/in.lsp*.desktop; do
     fi
   fi
 done
-
-echo "${CYAN}Setting default wallpaper...${RESET}"
-cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
-cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
