@@ -78,7 +78,6 @@ done
 echo "${CYAN}Setting default wallpaper...${RESET}"
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/pywallpaper.png
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-wal -i ~/Pictures/Wallpapers/walls/wall-archlinux.png -n  
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
