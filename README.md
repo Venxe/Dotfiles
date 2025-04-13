@@ -10,15 +10,16 @@ The installation process is fully automated and specifically tailored to my pers
 
 ## ⚙️ Installation
 
-### Dotfiles:
 Run the following command in the terminal to download and install the Hyprland dotfiles:
 ```bash
 git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x installers/install.sh && ./installers/install.sh
 ```
 
-- Wallpapers:
+### Recomandations:
 
-- FeralInteractive GameMode: 
+- [**Wallpapers**](https://github.com/sayimburak/wallpapers) – My high quality wallpaper collection
+
+- [**GameMode**](https://github.com/FeralInteractive/gamemode) – Various optimizations
 
 ## ⌨️ Keybinds
 
