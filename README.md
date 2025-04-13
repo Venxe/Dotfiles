@@ -26,13 +26,13 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + E`  - Open File Manager
 
-`SUPER + W`  - Wallpaper Selector
-
 `SUPER + M` - Force Close Hyprland
 
 `SUPER + 0-9` - Switch Workspace
 
 `SUPER + SHIFT + 0-9` - Move to Workspace
+
+`ALT + W`  - Wallpaper Selector
 
 `ALT + F4`  - Session Manager
 
