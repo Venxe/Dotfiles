@@ -41,9 +41,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ## 🗃️ Installed Programs:
 <details>
-<summary>To view the full list of programs, please click here.</summary>
-<br>
-<details>
 <summary>📦 Package & System Management</summary>
 
 - **pacman-contrib**
@@ -182,6 +179,4 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **dev.krtirtho.Flemozi**
 - **io.github.halfmexican.Mingle**
-</details>
-
 </details>
