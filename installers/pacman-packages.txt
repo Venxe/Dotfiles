@@ -1,4 +1,3 @@
-reflector
 pacman-contrib
 rsync
 flatpak
