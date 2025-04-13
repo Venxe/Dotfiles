@@ -55,5 +55,5 @@ button:focus{
     background-position:center;
 }
 window {
-    background-color: rgba(0, 0, 0, 0.5); /* Arka planı %50 siyah yap */
+    background-color: rgba(0, 0, 0, 0.5);
 }
