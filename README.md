@@ -16,6 +16,26 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ## ⌨️ Keybinds
 
+`SUPER + Q`  - Open Terminal
+
+`SUPER + R`  - App Launcher
+
+`SUPER + C`  - Force Close Window
+
+`SUPER + F`  - Fullscreen
+
+`SUPER + E`  - Open File Manager
+
+`SUPER + W`  - Wallpaper Selector
+
+`SUPER + M` - Force Close Hyprland
+
+`SUPER + 0-9` - Switch Workspace
+
+`SUPER + SHIFT + 0-9` - Move to Workspace
+
+`ALT + F4`  - Session Manager
+
 
 ## 🗃️ Installed Programs:
 <details>
@@ -27,6 +47,8 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **pacman-contrib**
 - **rsync**
 - **bleachbit**
+- **brightnessctl**
+- **gammastep**
 - **flatpak**
 - **com.github.tchx84.Flatseal**
 - **io.github.flattool.Warehouse**
@@ -51,6 +73,8 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 <details>
 <summary>🎨 Visual & Theme Customization</summary>
 
+- **python-pywal16**
+- **python-pywalfox**
 - **materia-gtk-theme**
 - **kora-icon-theme**
 - **qogir-icon-theme**
@@ -78,12 +102,12 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **thunar**
 - **gvfs**
+- **cpio**
+- **xarchiver**
+- **7zip**
 - **tumbler**
 - **libgsf**
 - **ffmpegthumbnailer**
-- **xarchiver**
-- **7zip**
-- **cpio**
 </details>
 
 <details>
@@ -114,18 +138,19 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **libreoffice-fresh**
 - **thunderbird**
-- **discord**
 - **obsidian**
 </details>
 
 <details>
-<summary>🔒 Security, Network & Connectivity</summary>
+<summary>🔒 Security & Privacy</summary>
 
 - **bitwarden**
 - **gnome-keyring**
 - **qbittorrent**
 - **blueman**
 - **bluez**
+- **com.protonvpn.www**
+- **org.torproject.torbrowser-launcher**
 - **gnome-network-displays**
 </details>
 
@@ -135,39 +160,19 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **lutris**
 - **com.heroicgameslauncher.hgl**
 - **com.vysp3r.ProtonPlus**
+- **discord**
+- **spotify**
 - **ncspot**
 - **bastet**
-- **spotify**
 </details>
 
 <details>
-<summary>🔗 Remote Access & File Transfer</summary>
+<summary>🔗 Miscellaneous Tools</summary>
 
+- **clock-rs-git**
+- **io.github.Qalculate**
 - **org.localsend.localsend_app**
 - **com.rustdesk.RustDesk**
-</details>
-
-<details>
-<summary>🕵️ VPN & Privacy</summary>
-
-- **com.protonvpn.www**
-- **org.torproject.torbrowser-launcher**
-</details>
-
-<details>
-<summary>🔢 Calculator & Miscellaneous Tools</summary>
-
-- **io.github.Qalculate**
-- **clock-rs-git**
-- **brightnessctl**
-- **gammastep**
-</details>
-
-<details>
-<summary>🎨 Color & Theme Generation</summary>
-
-- **python-pywal16**
-- **python-pywalfox**
 </details>
 
 <details>
