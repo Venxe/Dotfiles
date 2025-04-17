@@ -181,5 +181,3 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 </details>
 
 <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
-
-Deneme
