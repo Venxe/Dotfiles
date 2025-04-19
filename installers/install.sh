@@ -64,9 +64,7 @@ sudo bash -c '
 '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-
-echo "${CYAN}Setting CPU governor to:${RESET}"
-echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
 # wofi lsp-hider
 for file in /usr/share/applications/in.lsp*.desktop; do
