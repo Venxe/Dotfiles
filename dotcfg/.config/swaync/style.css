@@ -97,7 +97,7 @@
 }
 .control-center .notification-row .notification-background .notification .notification-content .summary,
 .floating-notifications.background .notification-background .notification .notification-content .summary {
-    font-family: 'CodeNewRoman Nerd Font Propo';
+    font-family: 'Fira Sans', sans-serif;
     font-size: 0.9909rem;
     font-weight: 500;
 }
@@ -110,7 +110,7 @@
 }
 .control-center .notification-row .notification-background .notification .notification-content .body,
 .floating-notifications.background .notification-background .notification .notification-content .body {
-    font-family: 'CodeNewRoman Nerd Font Propo';
+    font-family: 'Fira Sans', sans-serif;
     font-size: 0.8891rem;
     font-weight: 400;
     margin-top: 0.310rem;
@@ -240,7 +240,7 @@
     background-color: @mpris-button-hover;
 }
 .widget-buttons-grid {
-    font-family:"CodeNewRoman Nerd Font Propo";
+    font-family: 'Fira Sans', sans-serif;
     padding-left: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
