@@ -94,6 +94,7 @@ systemctl enable --now fstrim.timer
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
+sudo timedatectl set-local-rtc 1
 
 echo "${CYAN}Cleaning up Dotfiles directory...${RESET}"
 rm -rf "$HOME/Dotfiles"
