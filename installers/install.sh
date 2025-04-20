@@ -61,6 +61,7 @@ sudo bash -c '
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
   sed -i "s/^#\s*ParallelDownloads\s*=\s*5/ParallelDownloads = 5/" /etc/pacman.conf
+  timedatectl set-local-rtc 1
 '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
@@ -94,7 +95,6 @@ systemctl enable --now fstrim.timer
 systemctl enable bluetooth
 systemctl --user enable pipewire.service pipewire-pulse.service
 sudo systemctl enable avahi-daemon
-sudo timedatectl set-local-rtc 1
 
 echo "${CYAN}Cleaning up Dotfiles directory...${RESET}"
 rm -rf "$HOME/Dotfiles"
