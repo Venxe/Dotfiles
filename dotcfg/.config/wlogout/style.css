@@ -9,7 +9,7 @@
 }
 
 button {
-    font-family: 'CodeNewRoman Nerd Font Mono';
+    font-family: 'Fira Sans', sans-serif;
     background-color: alpha(@color9, 1);
     border-radius: 5px;
     background-repeat: no-repeat;
