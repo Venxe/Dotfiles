@@ -33,6 +33,8 @@ sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || error_exit "Failed to install Pacman packages!"
+echo "${CYAN}Removing Dolphin...${RESET}"
+sudo pacman -Rns dolphin --noconfirm
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
 xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
@@ -48,9 +50,6 @@ fi
 
 echo "${CYAN}Installing Yay packages...${RESET}"
 xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
-
-echo "${CYAN}Removing Dolphin...${RESET}"
-sudo pacman -Rns dolphin --noconfirm
 
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
