@@ -49,6 +49,9 @@ fi
 echo "${CYAN}Installing Yay packages...${RESET}"
 xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
+echo "${CYAN}Removing Dolphin...${RESET}"
+sudo pacman -Rns dolphin --noconfirm || error_exit "Failed to remove Dolphin!"
+
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
@@ -67,16 +70,8 @@ cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
-# wofi lsp-hider
-for file in /usr/share/applications/in.lsp*.desktop; do
-  if [ -f "$file" ]; then
-    if grep -q "^Hidden=" "$file"; then
-      sudo sed -i "s/^Hidden=.*/Hidden=true/" "$file"
-    else
-      sudo sed -i "/^\[Desktop Entry\]/a Hidden=true" "$file"
-    fi
-  fi
-done
+echo "${CYAN}Hide unnecessary applications...${RESET}"
+bash ~/Dotfiles/dotcfg/wofi-hider.sh || error_exit "Failed to run wofi-hider.sh!"
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
