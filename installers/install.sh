@@ -49,8 +49,8 @@ fi
 echo "${CYAN}Installing Yay packages...${RESET}"
 xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
-echo "${CYAN}Removing Dolphin...${RESET}"
-sudo pacman -Rns dolphin --noconfirm || error_exit "Failed to remove Dolphin!"
+echo "${CYAN}Removing Dolphin and Htop...${RESET}"
+sudo pacman -Rns dolphin htop --noconfirm || error_exit "Failed to remove Dolphin and Htop!"
 
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
