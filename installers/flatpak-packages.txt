@@ -8,5 +8,5 @@ com.rustdesk.RustDesk
 com.protonvpn.www
 org.torproject.torbrowser-launcher
 io.github.Qalculate
-flatpak install flathub it.mijorus.smile
+it.mijorus.smile
 io.github.halfmexican.Mingle
