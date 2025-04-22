@@ -25,11 +25,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + Q`  - Open Terminal
 
+`SUPER + E`  - Open File Manager
+
 `SUPER + R`  - App Launcher
 
 `SUPER + C`  - Force Close Window
-
-`SUPER + E`  - Open File Manager
 
 `SUPER + F`  - Fullscreen
 
