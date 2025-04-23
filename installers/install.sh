@@ -27,13 +27,11 @@ echo "${CYAN}Setting permissions for the home directory...${RESET}"
 sudo chmod -R 777 "$HOME" || error_exit "Failed to set permissions!"
 
 echo "${CYAN}Updating package manager and optimizing mirror list...${RESET}"
-sudo bash -c '
-  sed -i "/^#\[multilib\]/,/^#Include = \/etc\/pacman.d\/mirrorlist/s/^#//" /etc/pacman.conf  
-  sed -i "s/^#ParallelDownloads/ParallelDownloads/" /etc/pacman.conf
-  pacman -Syu --noconfirm || { echo "Failed to update package manager!"; exit 1; } &&
-  pacman -S --noconfirm reflector || { echo "Failed to install reflector!"; exit 1; } &&
-  reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || { echo "Failed to optimize mirrors!"; exit 1; }
-'
+sudo sed -i "/^#\[multilib\]/,/^#Include = \/etc\/pacman.d\/mirrorlist/s/^#//" /etc/pacman.conf  
+sudo sed -i "s/^#ParallelDownloads/ParallelDownloads/" /etc/pacman.conf
+sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
+sudo pacman -S --noconfirm reflector || error_exit "Failed to install reflector!"
+sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || error_exit "Failed to install Pacman packages!"
