@@ -45,6 +45,7 @@ discord
 bitwarden
 gnome-keyring
 qbittorrent
+steam
 lutris
 ncspot
 blueman
