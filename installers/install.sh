@@ -28,8 +28,7 @@ sudo chmod -R 777 "$HOME" || error_exit "Failed to set permissions!"
 
 echo "${CYAN}Updating package manager and optimizing mirror list...${RESET}"
 sudo bash -c '
-  sed -i "/^\[multilib\]/s/^#//" /etc/pacman.conf &&
-  sed -i "/\[multilib\]/{n;s/^#//;}" /etc/pacman.conf &&
+  sed -i "/^\[multilib\]/,/Include = \/etc\/pacman.d\/mirrorlist/s/^#//" /etc/pacman.conf &&
   sed -i "/^#\s*ParallelDownloads\s*=/s/^#\s*//" /etc/pacman.conf &&
   pacman -Syu --noconfirm || { echo "Failed to update package manager!"; exit 1; } &&
   pacman -S --noconfirm reflector || { echo "Failed to install reflector!"; exit 1; } &&
