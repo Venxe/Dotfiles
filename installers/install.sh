@@ -87,10 +87,12 @@ while true; do
 done
 
 echo "${CYAN}Enabling system services...${RESET}"
-systemctl enable --now fstrim.timer
-systemctl enable bluetooth
+sudo bash -c '
+  systemctl enable --now fstrim.timer
+  systemctl enable bluetooth
+  systemctl enable avahi-daemon
+'
 systemctl --user enable pipewire.service pipewire-pulse.service
-sudo systemctl enable avahi-daemon
 
 echo "${CYAN}Cleaning up Dotfiles directory...${RESET}"
 rm -rf "$HOME/Dotfiles"
