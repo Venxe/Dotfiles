@@ -27,9 +27,14 @@ echo "${CYAN}Setting permissions for the home directory...${RESET}"
 sudo chmod -R 777 "$HOME" || error_exit "Failed to set permissions!"
 
 echo "${CYAN}Updating package manager and optimizing mirror list...${RESET}"
-sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
-sudo pacman -S reflector --noconfirm || error_exit "Failed to update package manager!"
-sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
+sudo bash -c '
+  sed -i "/^\[multilib\]/s/^#//" /etc/pacman.conf &&
+  sed -i "/\[multilib\]/{n;s/^#//;}" /etc/pacman.conf &&
+  sed -i "/^#\s*ParallelDownloads\s*=/s/^#\s*//" /etc/pacman.conf &&
+  pacman -Syu --noconfirm || { echo "Failed to update package manager!"; exit 1; } &&
+  pacman -S --noconfirm reflector || { echo "Failed to install reflector!"; exit 1; } &&
+  reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || { echo "Failed to optimize mirrors!"; exit 1; }
+'
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed || error_exit "Failed to install Pacman packages!"
@@ -62,11 +67,11 @@ sudo bash -c '
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
-  sed -i "s/^#\s*ParallelDownloads\s*=\s*5/ParallelDownloads = 5/" /etc/pacman.conf
   timedatectl set-local-rtc 1
 '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
+
 echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
 echo "${CYAN}Hide unnecessary applications...${RESET}"
