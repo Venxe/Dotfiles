@@ -88,8 +88,8 @@ done
 
 echo "${CYAN}Enabling system services...${RESET}"
 sudo bash -c '
-  systemctl enable --now fstrim.timer
-  systemctl enable bluetooth
+  systemctl enable --now fstrim.timer &&
+  systemctl enable bluetooth &&
   systemctl enable avahi-daemon
 '
 systemctl --user enable pipewire.service pipewire-pulse.service
