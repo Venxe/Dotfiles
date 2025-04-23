@@ -8,6 +8,7 @@ for file in \
     /usr/share/applications/bssh.desktop \
     /usr/share/applications/bvnc.desktop \
     /usr/share/applications/calf.desktop \
+    /usr/share/applications/cmake-gui.desktop \
     /usr/share/applications/electron34.desktop \
     /usr/share/applications/gammastep-indicator.desktop \
     /usr/share/applications/lstopo.desktop \
