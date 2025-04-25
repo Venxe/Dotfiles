@@ -4,11 +4,11 @@ io.github.shiftey.Desktop
 com.heroicgameslauncher.hgl
 com.vysp3r.ProtonPlus
 org.localsend.localsend_app
+io.github.Qalculate
 com.rustdesk.RustDesk
 io.ente.auth
 com.protonvpn.www
 org.torproject.torbrowser-launcher
-io.github.Qalculate
 org.telegram.desktop
 it.mijorus.smile
 io.github.halfmexican.Mingle
