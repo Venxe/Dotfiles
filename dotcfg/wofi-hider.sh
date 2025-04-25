@@ -12,6 +12,7 @@ for file in \
     /usr/share/applications/cmake-gui.desktop \
     /usr/share/applications/electron34.desktop \
     /usr/share/applications/gammastep-indicator.desktop \
+    /usr/share/applications/org.gnome.NetworkDisplays.desktop \
     /usr/share/applications/lstopo.desktop \
     /usr/share/applications/qv4l2.desktop \
     /usr/share/applications/qvidcap.desktop \
