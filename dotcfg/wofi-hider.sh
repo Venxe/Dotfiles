@@ -16,6 +16,7 @@ for file in \
     /usr/share/applications/lstopo.desktop \
     /usr/share/applications/qv4l2.desktop \
     /usr/share/applications/qvidcap.desktop \
+    /usr/share/applications/thunar.desktop \
     /usr/share/applications/thunar-bulk-rename.desktop \
     /usr/share/applications/thunar-settings.desktop \
     /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.settings.desktop
