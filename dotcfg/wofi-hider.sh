@@ -5,6 +5,7 @@ set -euo pipefail
 for file in \
     /usr/share/applications/in.lsp*.desktop \
     /usr/share/applications/avahi-discover.desktop \
+    /usr/share/applications/blueman-adapters.desktop \
     /usr/share/applications/bssh.desktop \
     /usr/share/applications/bvnc.desktop \
     /usr/share/applications/calf.desktop \
