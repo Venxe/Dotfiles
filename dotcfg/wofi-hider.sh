@@ -16,7 +16,8 @@ for file in \
     /usr/share/applications/qv4l2.desktop \
     /usr/share/applications/qvidcap.desktop \
     /usr/share/applications/thunar-bulk-rename.desktop \
-    /usr/share/applications/thunar-settings.desktop
+    /usr/share/applications/thunar-settings.desktop \
+    /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.settings.desktop
 do
     if [ -f "$file" ]; then
         if grep -q "^Hidden=" "$file"; then
