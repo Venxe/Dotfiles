@@ -11,6 +11,7 @@ for file in \
     /usr/share/applications/calf.desktop \
     /usr/share/applications/cmake-gui.desktop \
     /usr/share/applications/electron34.desktop \
+    /usr/share/applications/fish.desktop \
     /usr/share/applications/gammastep-indicator.desktop \
     /usr/share/applications/org.gnome.NetworkDisplays.desktop \
     /usr/share/applications/libreoffice-base.desktop \
