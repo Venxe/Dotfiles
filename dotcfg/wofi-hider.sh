@@ -18,7 +18,7 @@ for file in \
     /usr/share/applications/libreoffice-draw.desktop \
     /usr/share/applications/libreoffice-impress.desktop \
     /usr/share/applications/libreoffice-math.desktop \
-    /usr/share/applications/libreoffice-writer.desktop
+    /usr/share/applications/libreoffice-writer.desktop \
     /usr/share/applications/lstopo.desktop \
     /usr/share/applications/qv4l2.desktop \
     /usr/share/applications/qvidcap.desktop \
