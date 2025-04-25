@@ -36,6 +36,7 @@ easyeffects
 lsp-plugins
 calf
 mpv
+yt-dlp
 cava
 swayimg
 obs-studio
