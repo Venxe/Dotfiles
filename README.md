@@ -64,7 +64,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 > For the full set of key bindings, please refer to `~/.config/hypr/hyprland.conf` file.
 
 
-## 🗃️ Installed Programs
+## 🗃️ My Apps
 
 Below is a comprehensive, categorized list of all applications installed automatically during setup:
 
