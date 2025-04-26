@@ -70,7 +70,9 @@ sudo bash -c '
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
-  timedatectl set-local-rtc 1
+  timedatectl set-local-rtc 1 &&
+  nmcli connection modify "Wired connection 2" ipv6.method ignore
+  nmcli connection down "Wired connection 2" && sudo nmcli connection up "Wired connection 1"
 '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
