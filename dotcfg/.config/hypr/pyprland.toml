@@ -11,7 +11,7 @@ position = "17% 6%"
 size = "65% 60%"
 offset = "200%"
 
-[scratchpads.music]
+[scratchpads.audio]
 animation = "fromBottom"
 command = "kitty --class kitty-pulsemixer -e pulsemixer"
 class = "kitty-pulsemixer"
