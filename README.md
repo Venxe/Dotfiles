@@ -10,7 +10,7 @@ The installation process is fully automated and specifically tailored to my pers
 
 ## ⚙️ Installation
 
-Run the following command in the terminal to download and install the Hyprland dotfiles:
+Run the following command in the terminal to download and install the dotfiles:
 ```bash
 git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x installers/install.sh && ./installers/install.sh
 ```
