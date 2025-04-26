@@ -57,7 +57,6 @@ echo "${CYAN}Installing nnn plugins...${RESET}"
 mkdir -p ~/.config/nnn/plugins
 wget --quiet https://raw.githubusercontent.com/jarun/nnn/master/plugins/preview-tui \
 -O ~/.config/nnn/plugins/preview-tui
-chmod +x ~/.config/nnn/plugins/preview-tui
 
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
