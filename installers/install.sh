@@ -70,15 +70,13 @@ sudo bash -c '
   cp -a dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
+  bash ~/Dotfiles/dotcfg/wofi-fix.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
 '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
-
-echo "${CYAN}Installing Wofi configuration...${RESET}"
-sudo bash ~/Dotfiles/dotcfg/wofi-fix.sh || error_exit "Failed to install wofi-fix.sh!"
 
 echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
