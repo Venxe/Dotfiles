@@ -64,9 +64,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **pacman-contrib**
 - **rsync**
+- **thunar**
 - **flatpak**
 - **gvfs**
 - **libgsf**
+- **tumbler**
 - **ffmpegthumbnailer**
 - **cpio**
 - **bleachbit**
@@ -127,13 +129,13 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **mpv**
 - **swayimg**
-- **obs-studio**
 - **easyeffects**
 - **lsp-plugins**
+- **gst-plugins-bad**
 - **calf**
+- **obs-studio**
 - **spotify**
 - **ncspot**
-- **gst-plugins-bad**
 - **yt-dlp**
 </details>
 
@@ -141,16 +143,15 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 <summary>🛠️ Productivity & Development</summary>
 
 - **libreoffice-fresh**
-- **obsidian**
 - **thunderbird**
-- **thunar**
-- **tumbler**
+- **obsidian**
 - **xarchiver**
 - **7zip**
 - **code**
 - **neovim**
 - **cmake**
 - **meson**
+- **io.github.shiftey.Desktop**
 - **io.github.Qalculate**
 </details>
 
@@ -160,7 +161,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **discord**
 - **qbittorrent**
 - **org.localsend.localsend_app**
-- **io.github.shiftey.Desktop**
 - **org.telegram.desktop**
 - **it.mijorus.smile**
 - **io.github.halfmexican.Mingle**
@@ -172,10 +172,10 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **steam**
 - **lutris**
 - **bastet**
-- **asciiquarium**
 - **cmatrix**
 - **pipes-rs**
 - **lolcat**
+- **asciiquarium**
 - **com.heroicgameslauncher.hgl**
 - **com.vysp3r.ProtonPlus**
 </details>
