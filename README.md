@@ -31,19 +31,30 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + C`  - Force Close Window
 
+`SUPER + V`  - Toggle Floating
+
+`SUPER + L`  - Lock Session
+
 `SUPER + F`  - Fullscreen
 
 `SUPER + G`  - Audio Manager
 
+`SUPER + T`  - Task Manager
+
 `SUPER + M` - Force Close Hyprland
+
+`SUPER + W`  - Wallpaper Selector
 
 `SUPER + 0-9` - Switch Workspace
 
 `SUPER + SHIFT + 0-9` - Move to Workspace
 
-`ALT + W`  - Wallpaper Selector
+`ALT + E`  - Emote Selector
 
 `ALT + F4`  - Session Manager
+
+> [!Tip]
+> This list doesn’t cover every shortcut. For the full set of key bindings, please refer to your `~/.config/hypr/hyprland.conf` file.
 
 
 ## 🗃️ Installed Programs
