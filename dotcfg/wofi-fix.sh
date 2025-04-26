@@ -5,6 +5,7 @@ declare -A exec_map=(
   [vim]="kitty -e vim %F"
   [nvim]="kitty -e nvim %F"
   [btop]="kitty -e btop"
+  [ncspot]="kitty -e ncspot"
   [bastet]="kitty -e bastet"
   [nnn]="env NNN_FIFO=/tmp/nnn.fifo NNN_PLUG=p:preview-tui kitty -e nnn -a -P p"
 )
