@@ -55,7 +55,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 `ALT + F4`  - Session Manager
 
 > [!Tip]
-> For the full set of key bindings, please refer to your `~/.config/hypr/hyprland.conf` file.
+> For the full set of key bindings, please refer to `~/.config/hypr/hyprland.conf` file.
 
 
 ## 🗃️ Installed Programs
