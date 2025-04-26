@@ -28,7 +28,7 @@ if [[ $# -eq 1 && $1 == "-j" ]]; then
     tooltip+="   <b>$color</b>  <span color='$color'></span>\\n"
   done
 
-  printf '{ "text": "<span color='\''%s'\''></span>", "tooltip": "%s" }\n' "$text" "$tooltip"
+  printf '{ "text": "<span color='\''%s'\''>󰏘</span>", "tooltip": "%s" }\n' "$text" "$tooltip"
   exit
 fi
 
