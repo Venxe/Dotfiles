@@ -53,6 +53,10 @@ fi
 echo "${CYAN}Installing Yay packages...${RESET}"
 xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
+echo "${CYAN}Installing nnn plugins...${RESET}"
+wget https://raw.githubusercontent.com/jarun/nnn/master/plugins/preview-tui \
+-O ~/.config/nnn/plugins/preview-tui
+
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
