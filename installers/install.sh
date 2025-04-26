@@ -86,7 +86,7 @@ echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
     echo "${YELLOW}Enter your password to change the shell to Fish:${RESET}"
     if chsh -s /usr/bin/fish; then
-        echo "${GREEN}Shell successfully changed to Fish.${RESET}"
+        echo "${GREEN}Authentication successful!${RESET}"
         break
     else
         echo "${RED}Authentication failed! Please try again.${RESET}"
