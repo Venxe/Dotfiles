@@ -72,7 +72,8 @@ sudo bash -c '
   cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
   timedatectl set-local-rtc 1 &&
   [ ! -f /etc/NetworkManager/NetworkManager.conf ] && echo -e "[main]\ndns=systemd-resolved" | sudo tee /etc/NetworkManager/NetworkManager.conf >/dev/null
-  grep -q "^\[main\]" /etc/NetworkManager/NetworkManager.conf || { sudo sed -i '1i[main]' /etc/NetworkManager/NetworkManager.conf && sudo sed -i '/^\[main\]/a\dns=systemd-resolved' /etc/NetworkManager/NetworkManager.conf; }
+  grep -q "^\[main\]" /etc/NetworkManager/NetworkManager.conf || sudo sed -i '1i[main]' /etc/NetworkManager/NetworkManager.conf
+  grep -q "^dns=systemd-resolved" /etc/NetworkManager/NetworkManager.conf || sudo sed -i '/^\[main\]/a dns=systemd-resolved' /etc/NetworkManager/NetworkManager.conf
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
 '
