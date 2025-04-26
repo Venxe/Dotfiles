@@ -90,14 +90,14 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **fish**
 - **starship**
 - **fastfetch**
+- **myfetch**
 - **eza**
-- **btop**
 - **fd**
+- **btop**
 - **nnn**
 - **less**
 - **pulsemixer**
 - **cava**
-- **myfetch**
 </details>
 
 <details>
@@ -132,9 +132,9 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **lsp-plugins**
 - **calf**
 - **spotify**
+- **ncspot**
 - **gst-plugins-bad**
 - **yt-dlp**
-- **ncspot**
 </details>
 
 <details>
@@ -167,11 +167,15 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 </details>
 
 <details>
-<summary>🎮 Gaming</summary>
+<summary>🎮 Gaming & Entertainment</summary>
 
 - **steam**
 - **lutris**
 - **bastet**
+- **asciiquarium**
+- **cmatrix**
+- **pipes-rs**
+- **lolcat**
 - **com.heroicgameslauncher.hgl**
 - **com.vysp3r.ProtonPlus**
 </details>
@@ -183,15 +187,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **io.ente.auth**
 - **com.protonvpn.www**
 - **org.torproject.torbrowser-launcher**
-</details>
-
-<details>
-<summary>🎉 Fun & Entertainment</summary>
-
-- **asciiquarium**
-- **cmatrix**
-- **lolcat**
-- **pipes-rs**
 </details>
 
 <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
