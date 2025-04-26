@@ -35,8 +35,8 @@ sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
-echo "${CYAN}Removing Dolphin...${RESET}"
-sudo pacman -Rns dolphin --noconfirm
+echo "${CYAN}Removing Dolphin and Htop...${RESET}"
+sudo pacman -Rns dolphin htop --noconfirm
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
 xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
