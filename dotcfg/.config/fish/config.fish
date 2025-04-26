@@ -16,9 +16,11 @@ alias bye='sudo shutdown -h now'
 alias Docs="cd ~/Documents && nvim"
 alias Settings="cd ~/.config/hypr && nvim"
 
+set -gx NNN_TMPFILE "$XDG_CONFIG_HOME/nnn/.lastd"
+set -gx NNN_FIFO "/tmp/nnn.fifo" 
+set -gx NNN_PLUG "p:preview-tui"
+
 set -gx NVM_DIR "$HOME/.nvm"
 if test -s "$NVM_DIR/nvm.sh"
     bass source "$NVM_DIR/nvm.sh"
 end
-
-set -g PS1 "[\u@\h \W]\$ "
