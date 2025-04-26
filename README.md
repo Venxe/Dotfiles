@@ -71,9 +71,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **cpio**
 - **bleachbit**
 - **gnome-keyring**
-- **com.github.tchx84.Flatseal**
-- **io.github.flattool.Warehouse**
-- **com.rustdesk.RustDesk**
 - **brightnessctl**
 - **gnome-network-displays**
 - **bluez**
@@ -82,6 +79,9 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **hypridle**
 - **hyprpicker**
 - **hyprlock**
+- **com.github.tchx84.Flatseal**
+- **io.github.flattool.Warehouse**
+- **com.rustdesk.RustDesk**
 </details>
 
 <details>
@@ -159,8 +159,8 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 <summary>💬 Internet & Communication</summary>
 
 - **discord**
-- **org.telegram.desktop**
 - **qbittorrent**
+- **org.telegram.desktop**
 - **org.localsend.localsend_app**
 - **io.github.halfmexican.Mingle**
 - **io.github.shiftey.Desktop**
@@ -171,9 +171,9 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **steam**
 - **lutris**
+- **bastet**
 - **com.heroicgameslauncher.hgl**
 - **com.vysp3r.ProtonPlus**
-- **bastet**
 </details>
 
 <details>
