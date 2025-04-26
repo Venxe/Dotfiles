@@ -70,7 +70,6 @@ sudo bash -c '
   cp -a dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
-  cp -a dotcfg/wofi-fix/. /usr/share/applications/ &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
@@ -78,10 +77,10 @@ sudo bash -c '
 cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
-echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
+echo "${CYAN}Installing Wofi configuration...${RESET}"
+bash ~/Dotfiles/dotcfg/wofi-fix.sh || error_exit "Failed to run wofi-hider.sh!"
 
-echo "${CYAN}Hide unnecessary applications...${RESET}"
-bash ~/Dotfiles/dotcfg/wofi-hider.sh || error_exit "Failed to run wofi-hider.sh!"
+echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
