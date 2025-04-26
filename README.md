@@ -4,6 +4,12 @@ This repository contains my personal dotfiles for setting up a highly customized
 
 The installation process is fully automated and specifically tailored to my personal workflow.
 
+🐧 **Operating System:** Arch Linux
+
+🖼️ **Window Manager:** Hyprland
+
+🖥️ **Display Manager:** SDDM
+
 > [!WARNING]  
 > Running this setup may install software and configurations that could conflict with your preferences. You may want to review the [packages](https://github.com/Venxe/Dotfiles/tree/main/installers) before proceeding.
 
