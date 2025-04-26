@@ -70,8 +70,8 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **ffmpegthumbnailer**
 - **cpio**
 - **bleachbit**
-- **gnome-keyring**
 - **brightnessctl**
+- **gnome-keyring**
 - **gnome-network-displays**
 - **bluez**
 - **blueman**
@@ -98,6 +98,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **less**
 - **pulsemixer**
 - **cava**
+- **clock-rs-git**
 </details>
 
 <details>
@@ -116,7 +117,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **python-pywal16**
 - **python-pywalfox**
 - **gammastep**
-- **clock-rs-git**
 - **wlogout**
 - **hyprshot**
 - **pyprland**
@@ -152,7 +152,6 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 - **cmake**
 - **meson**
 - **io.github.Qalculate**
-- **it.mijorus.smile**
 </details>
 
 <details>
@@ -160,10 +159,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - **discord**
 - **qbittorrent**
-- **org.telegram.desktop**
 - **org.localsend.localsend_app**
-- **io.github.halfmexican.Mingle**
 - **io.github.shiftey.Desktop**
+- **org.telegram.desktop**
+- **it.mijorus.smile**
+- **io.github.halfmexican.Mingle**
 </details>
 
 <details>
