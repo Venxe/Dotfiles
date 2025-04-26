@@ -7,6 +7,7 @@ fastfetch
 eza
 btop
 fd
+less
 swww
 waybar
 swaync
