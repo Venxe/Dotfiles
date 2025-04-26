@@ -2,7 +2,7 @@
 
 This repository contains my personal dotfiles for setting up a highly customized and optimized Hyprland environment on Arch Linux. The dotfiles prioritize a minimalist and efficient approach, offering a lightweight and high-performance user experience.
 
-The installation process is fully automated and specifically tailored to my personal workflow. **Manual installation support is not provided**, as this setup is designed to streamline and simplify the process for my unique use case.
+The installation process is fully automated and specifically tailored to my personal workflow.
 
 > [!WARNING]  
 > Running this setup may install software and configurations that could conflict with your preferences. You may want to review the [install script](https://github.com/Venxe/Dotfiles/blob/main/installers/install.sh) before proceeding.
