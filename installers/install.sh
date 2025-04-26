@@ -31,7 +31,7 @@ sudo sed -i "/^#\[multilib\]/,/^#Include = \/etc\/pacman.d\/mirrorlist/s/^#//" /
 sudo sed -i "s/^#ParallelDownloads/ParallelDownloads/" /etc/pacman.conf
 sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
 sudo pacman -S --noconfirm reflector || error_exit "Failed to install reflector!"
-sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --save /etc/pacman.d/mirrorlist || error_exit "Failed to optimize mirrors!"
+sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --protocol https --save /etc/pacman.d/mirrorlist || echo "Failed to optimize mirrors!"
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
 xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
