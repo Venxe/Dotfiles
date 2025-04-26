@@ -2,10 +2,10 @@
 set -euo pipefail
 
 declare -A exec_map=(
-  [bastet]="kitty -e bastet"
-  [btop]="kitty -e btop"
-  [nvim]="kitty -e nvim %F"
   [vim]="kitty -e vim %F"
+  [nvim]="kitty -e nvim %F"
+  [btop]="kitty -e btop"
+  [bastet]="kitty -e bastet"
   [nnn]="env NNN_FIFO=/tmp/nnn.fifo NNN_PLUG=p:preview-tui kitty -e nnn -a -P p"
 )
 
