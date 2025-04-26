@@ -13,6 +13,7 @@ for file in \
     /usr/share/applications/electron34.desktop \
     /usr/share/applications/fish.desktop \
     /usr/share/applications/gammastep-indicator.desktop \
+    /usr/share/applications/kitty.desktop \
     /usr/share/applications/org.gnome.NetworkDisplays.desktop \
     /usr/share/applications/libreoffice-base.desktop \
     /usr/share/applications/libreoffice-calc.desktop \
