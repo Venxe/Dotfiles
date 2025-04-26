@@ -21,6 +21,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 - [**GameMode**](https://github.com/FeralInteractive/gamemode) – A range of performance and usability optimizations
 
+
 ## ⌨️ Keybinds
 
 `SUPER + Q`  - Open Terminal
@@ -54,7 +55,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 `ALT + F4`  - Session Manager
 
 > [!Tip]
-> This list doesn’t cover every shortcut. For the full set of key bindings, please refer to your `~/.config/hypr/hyprland.conf` file.
+> For the full set of key bindings, please refer to your `~/.config/hypr/hyprland.conf` file.
 
 
 ## 🗃️ Installed Programs
