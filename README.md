@@ -59,6 +59,9 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 
 ## 🗃️ Installed Programs
+
+Below is a comprehensive, categorized list of all applications installed automatically during setup:
+
 <details>
 <summary>📦 System & Package Management</summary>
 
