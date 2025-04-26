@@ -98,6 +98,7 @@ done
 echo "${CYAN}Enabling system services...${RESET}"
 sudo bash -c '
   systemctl enable --now fstrim.timer &&
+  systemctl enable systemd-resolved &&
   systemctl enable bluetooth &&
   systemctl enable avahi-daemon
 '
