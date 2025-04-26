@@ -78,7 +78,7 @@ cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
 echo "${CYAN}Installing Wofi configuration...${RESET}"
-bash ~/Dotfiles/dotcfg/wofi-fix.sh || error_exit "Failed to run wofi-hider.sh!"
+sudo bash ~/Dotfiles/dotcfg/wofi-fix.sh || error_exit "Failed to install wofi-fix.sh!"
 
 echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
 
