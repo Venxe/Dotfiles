@@ -2,7 +2,7 @@
 Type=Application
 Name=nnn
 Comment=Terminal file manager
-Exec=kitty -e nnn -P p %f
+Exec=env NNN_FIFO=/tmp/nnn.fifo NNN_PLUG=p:preview-tui kitty -e nnn -P p
 Terminal=false
 Icon=nnn
 MimeType=inode/directory
