@@ -60,136 +60,138 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ## 🗃️ Installed Programs
 <details>
-<summary>🔧 Core System Tools</summary>
+<summary>📦 System & Package Management</summary>
 
 - **pacman-contrib**
-- **python-pywal16**
-- **python-pywalfox**
-- **hypridle**
-- **hyprlock**
-- **hyprpicker**
-- **hyprshot**
-- **pyprland**
-- **wlogout**
-- **waybar**
-- **swaync**
-- **swww**
-- **blueman**
-- **bluez**
 - **rsync**
-- **cmake**
-- **meson**
+- **flatpak**
+- **gvfs**
+- **libgsf**
+- **ffmpegthumbnailer**
+- **cpio**
+- **bleachbit**
+- **gnome-keyring**
+- **com.github.tchx84.Flatseal**
+- **io.github.flattool.Warehouse**
+- **com.rustdesk.RustDesk**
 - **brightnessctl**
-- **gammastep**
+- **gnome-network-displays**
+- **bluez**
+- **blueman**
+- **wl-clip-persist**
+- **hypridle**
+- **hyprpicker**
+- **hyprlock**
 </details>
 
 <details>
-<summary>💻 Terminal & Shell Utilities</summary>
+<summary>💻 Terminal & CLI Tools</summary>
 
 - **fish**
 - **starship**
-- **btop**
-- **eza**
-- **fd**
 - **fastfetch**
+- **eza**
+- **btop**
+- **fd**
+- **nnn**
+- **less**
+- **pulsemixer**
+- **cava**
 - **myfetch**
-- **clock-rs-git**
-- **asciiquarium**
-- **cmatrix**
-- **pipes-rs**
-- **lolcat**
 </details>
 
 <details>
-<summary>📁 File Management & Archiving</summary>
+<summary>🎨 Desktop Customization & Appearance</summary>
 
-- **thunar**
-- **gvfs**
-- **cpio**
-- **xarchiver**
-- **7zip**
-- **tumbler**
-- **libgsf**
-- **ffmpegthumbnailer**
-</details>
-
-<details>
-<summary>🔒 Security & Privacy</summary>
-
-- **bitwarden**
-- **qbittorrent**
-- **gnome-keyring**
-- **com.protonvpn.www**
-- **org.torproject.torbrowser-launcher**
-- **gnome-network-displays**
-</details>
-
-<details>
-<summary>🎨 Themes & Fonts</summary>
-
+- **swww**
+- **waybar**
+- **swaync**
+- **nwg-look**
 - **materia-gtk-theme**
-- **kora-icon-theme**
-- **qogir-icon-theme**
 - **ttf-fira-sans**
 - **ttf-firacode-nerd**
-- **nwg-look**
+- **ttf-jetbrains-mono**
+- **kora-icon-theme**
+- **qogir-icon-theme**
+- **python-pywal16**
+- **python-pywalfox**
+- **gammastep**
+- **clock-rs-git**
+- **wlogout**
+- **hyprshot**
+- **pyprland**
 </details>
 
 <details>
-<summary>🎵 Audio & Multimedia</summary>
+<summary>🎥 Multimedia & Audio</summary>
 
-- **pulsemixer**
-- **easyeffects**
-- **calf**
 - **mpv**
-- **cava**
-- **lsp-plugins**
-- **gst-plugins-bad**
+- **swayimg**
 - **obs-studio**
+- **easyeffects**
+- **lsp-plugins**
+- **calf**
+- **spotify**
+- **gst-plugins-bad**
+- **yt-dlp**
+- **ncspot**
 </details>
 
 <details>
-<summary>📄 Office, Communication & Note-taking</summary>
+<summary>🛠️ Productivity & Development</summary>
 
 - **libreoffice-fresh**
-- **thunderbird**
 - **obsidian**
-- **dev.krtirtho.Flemozi**
-- **io.github.halfmexican.Mingle**
+- **thunderbird**
+- **thunar**
+- **tumbler**
+- **xarchiver**
+- **7zip**
+- **code**
+- **neovim**
+- **cmake**
+- **meson**
+- **io.github.Qalculate**
+- **it.mijorus.smile**
 </details>
 
 <details>
-<summary>🛠️ Development & Build Tools</summary>
+<summary>💬 Internet & Communication</summary>
 
-- **neovim**
-- **code**
+- **discord**
+- **org.telegram.desktop**
+- **qbittorrent**
+- **org.localsend.localsend_app**
+- **io.github.halfmexican.Mingle**
 - **io.github.shiftey.Desktop**
 </details>
 
 <details>
-<summary>🎮 Gaming & Entertainment</summary>
+<summary>🎮 Gaming</summary>
 
-- **discord**
-- **spotify**
-- **ncspot**
-- **bastet**
+- **steam**
 - **lutris**
 - **com.heroicgameslauncher.hgl**
 - **com.vysp3r.ProtonPlus**
+- **bastet**
 </details>
 
 <details>
-<summary>🔗 Miscellaneous Tools</summary>
-
-- **bleachbit**
-- **flatpak**
-- **com.github.tchx84.Flatseal**
-- **io.github.flattool.Warehouse**
-- **io.github.Qalculate**
-- **org.localsend.localsend_app**
-- **com.rustdesk.RustDesk**
+<summary>🔒 Security & Privacy</summary>
+  
+- **bitwarden**
+- **io.ente.auth**
+- **com.protonvpn.www**
+- **org.torproject.torbrowser-launcher**
 </details>
 
+<details>
+<summary>🎉 Fun & Entertainment</summary>
+
+- **asciiquarium**
+- **cmatrix**
+- **lolcat**
+- **pipes-rs**
 </details>
 
 <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
