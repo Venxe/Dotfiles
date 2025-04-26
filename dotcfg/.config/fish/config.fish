@@ -15,7 +15,7 @@ alias fonts='fc-list -f "%{family}\n"'
 alias bye='sudo shutdown -h now'
 alias Docs="cd ~/Documents && nvim"
 alias Settings="cd ~/.config/hypr && nvim"
-alias nnn='nnn -P p'
+alias nnn='nnn -a -P p'
 
 set -gx NNN_TMPFILE "$XDG_CONFIG_HOME/nnn/.lastd"
 set -gx NNN_FIFO "/tmp/nnn.fifo" 
