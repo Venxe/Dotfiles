@@ -5,7 +5,6 @@ export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
 
 # Start dbus-launch before gsettings
-eval $(dbus-launch --sh-syntax)
 
 # GSettings - GNOME settings
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
