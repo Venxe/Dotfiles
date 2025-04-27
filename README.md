@@ -77,19 +77,19 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 - **pacman-contrib**
 - **rsync**
+- **cpio**
 - **hypridle**
 - **hyprlock**
 - **hyprpicker**
-- **thunar**
-- **gvfs**
-- **cpio**
-- **libgsf**
 - **bluez**
 - **blueman**
-- **tumbler**
-- **ffmpegthumbnailer**
 - **brightnessctl**
 - **wl-clip-persist**
+- **thunar**
+- **gvfs**
+- **libgsf**
+- **tumbler**
+- **ffmpegthumbnailer**
 - **bleachbit**
 - **flatpak**
 - **gnome-keyring**
