@@ -1,13 +1,21 @@
 #!/usr/bin/env bash
 set -e
 
+# D-Bus oturumunu güvenli şekilde başlat
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+  eval "$(dbus-launch --sh-syntax)"
+fi
+
+# XDG Runtime Directory kontrolü
+if [ -z "$XDG_RUNTIME_DIR" ]; then
+  export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+fi
+
+# Temel tema ayarları
 export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
 
-# Start dbus-launch before gsettings
-export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
-
-# GSettings - GNOME settings
+# GNOME GSettings ayarları
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 gsettings set org.gnome.desktop.interface cursor-theme "Qogir-manjaro-dark"
@@ -21,10 +29,10 @@ gsettings set org.gnome.desktop.interface toolbar-style "both-horiz"
 gsettings set org.gnome.desktop.interface toolbar-icons-size "small"
 gsettings set org.gnome.desktop.sound event-sounds true
 gsettings set org.gnome.desktop.sound input-feedback-sounds false
-gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"  # Added color-scheme setting
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 
-# GTK3 & GTK4 Config
-mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
+# GTK3/GTK4 ayar dosyaları
+mkdir -p ~/.config/gtk-{3.0,4.0}
 cat > ~/.config/gtk-3.0/settings.ini <<EOF
 [Settings]
 gtk-theme-name=Materia-dark-compact
@@ -42,13 +50,11 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
-gtk-application-prefer-dark-theme=0
 EOF
 
-# Link GTK3 settings to GTK4
 ln -sf ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/settings.ini
 
-# GTK2 Settings
+# GTK2 ayar dosyası
 cat > ~/.gtkrc-2.0 <<EOF
 gtk-theme-name="Materia-dark-compact"
 gtk-icon-theme-name="kora"
@@ -67,10 +73,12 @@ gtk-xft-hintstyle="hintslight"
 gtk-xft-rgba="rgb"
 EOF
 
-# Cursor Settings
+# İmleç teması için fallback ayarı
 mkdir -p ~/.local/share/icons/default
 cat > ~/.local/share/icons/default/index.theme <<EOF
 [Icon Theme]
 Name=Default
 Inherits=Qogir-manjaro-dark
 EOF
+
+echo "Tüm tema ayarları başarıyla uygulandı!"
