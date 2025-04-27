@@ -4,7 +4,7 @@ set -e
 export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
 
-# GSettings
+# GSettings - GNOME Settings
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 gsettings set org.gnome.desktop.interface cursor-theme "Qogir-manjaro-dark"
@@ -40,6 +40,8 @@ gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
 gtk-application-prefer-dark-theme=0
 EOF
+
+# Link GTK3 settings to GTK4
 ln -sf ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/settings.ini
 
 # GTK2 Settings
