@@ -1,19 +1,5 @@
 #!/usr/bin/env bash
 
-# D-Bus oturumunu güvenli şekilde başlat
-if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
-  eval "$(dbus-launch --sh-syntax)"
-fi
-
-# XDG Runtime Directory kontrolü
-if [ -z "$XDG_RUNTIME_DIR" ]; then
-  export XDG_RUNTIME_DIR="/run/user/$(id -u)"
-fi
-
-# Temel tema ayarları
-export XCURSOR_THEME="Qogir-manjaro-dark"
-export XCURSOR_SIZE=21
-
 # GNOME GSettings ayarları
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
