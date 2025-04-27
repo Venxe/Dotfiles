@@ -1,4 +1,8 @@
-[![Wallpaper Preview](banner1.jpg)](http://github.com/sayimburak/wallpapers?tab=readme-ov-file#categories)
+[![sayimburak's Dotfiles](banner.jpg)](https://github.com/Venxe/Dotfiles)
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
+</p>
 
 This repository contains my personal dotfiles for setting up a highly customized and optimized Hyprland environment on Arch Linux. The dotfiles prioritize a minimalist and efficient approach, offering a lightweight and high-performance user experience.
 
@@ -197,5 +201,3 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **com.protonvpn.www**
 - **org.torproject.torbrowser-launcher**
 </details>
-
-<a href="https://www.buymeacoffee.com/sayimburak" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 28px !important;" ></a>
