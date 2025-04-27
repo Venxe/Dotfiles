@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 # D-Bus oturumunu güvenli şekilde başlat
 if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
