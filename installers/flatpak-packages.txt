@@ -4,7 +4,6 @@ io.github.shiftey.Desktop
 io.github.Qalculate
 org.localsend.localsend_app
 org.telegram.desktop
-it.mijorus.smile
 io.github.halfmexican.Mingle
 com.rustdesk.RustDesk
 com.heroicgameslauncher.hgl
