@@ -57,7 +57,7 @@ echo "${CYAN}Installing nnn plugins...${RESET}"
 mkdir -p ~/.config/nnn/plugins
 wget --quiet https://raw.githubusercontent.com/jarun/nnn/master/plugins/preview-tui \
 -O ~/.config/nnn/plugins/preview-tui
-sudo chmod +x ~/.config/nnn/plugins/preview-tui
+chmod +x ~/.config/nnn/plugins/preview-tui
 
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
@@ -65,17 +65,17 @@ mkdir -p ~/Pictures/Wallpapers/walls
 
 echo "${CYAN}Installing configuration files...${RESET}"
 sudo bash -c '
-  cp -r dotcfg/resolved.conf /etc/systemd/resolved.conf &&
-  cp -r dotcfg/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf &&
-  cp -r dotcfg/swappiness.conf /etc/sysctl.d/ &&
-  cp -r dotcfg/sb-theme /usr/share/sddm/themes/ &&
+  cp -a dotcfg/resolved.conf /etc/systemd/resolved.conf &&
+  cp -a dotcfg/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf &&
+  cp -a dotcfg/swappiness.conf /etc/sysctl.d/ &&
+  cp -a dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -a dotcfg/sddm.conf /etc/sddm.conf &&
   bash dotcfg/wofi-fix.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
 '
-cp -r dotcfg/.config/* ~/.config/
+cp -a dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
 echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
