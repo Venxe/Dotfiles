@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 set -e
 
+# Start dbus-launch before gsettings
+export $(dbus-launch --sh-syntax)
+
+# Environment setup for gsettings and GTK
 export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
-
-# Start dbus-launch before gsettings
 
 # GSettings - GNOME settings
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
