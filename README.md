@@ -78,9 +78,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **pacman-contrib**
 - **rsync**
 - **cpio**
-- **hypridle**
-- **hyprlock**
-- **hyprpicker**
 - **bluez**
 - **blueman**
 - **brightnessctl**
@@ -90,6 +87,8 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **libgsf**
 - **tumbler**
 - **ffmpegthumbnailer**
+- **7zip**
+- **xarchiver**
 - **bleachbit**
 - **flatpak**
 - **gnome-keyring**
@@ -122,6 +121,9 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **swww**
 - **waybar**
 - **swaync**
+- **hypridle**
+- **hyprlock**
+- **hyprpicker**
 - **gammastep**
 - **nwg-look**
 - **materia-gtk-theme**
@@ -160,8 +162,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **obsidian**
 - **code**
 - **neovim**
-- **xarchiver**
-- **7zip**
 - **cmake**
 - **meson**
 - **io.github.shiftey.Desktop**
