@@ -8,6 +8,7 @@ declare -A exec_map=(
   [ncspot]="kitty -e ncspot"
   [bastet]="kitty -e bastet"
   [nnn]="env NNN_FIFO=/tmp/nnn.fifo NNN_PLUG=p:preview-tui kitty -e nnn -a -P p"
+  [it.mijorus.smile]="pypr toggle smile"
 )
 
 hidden_list=(
