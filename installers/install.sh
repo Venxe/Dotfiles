@@ -74,7 +74,7 @@ sudo bash -c '
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
 '
-bash dotcfg/set-theme.sh &&
+bash dotcfg/set-theme.sh
 cp -r dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
