@@ -1,4 +1,4 @@
-# sayimburak's Dotfiles
+[![Wallpaper Preview](banner1.jpg)](http://github.com/sayimburak/wallpapers?tab=readme-ov-file#categories)
 
 This repository contains my personal dotfiles for setting up a highly customized and optimized Hyprland environment on Arch Linux. The dotfiles prioritize a minimalist and efficient approach, offering a lightweight and high-performance user experience.
 
