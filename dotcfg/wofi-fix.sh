@@ -27,7 +27,6 @@ hidden_list=(
   /usr/share/applications/lstopo.desktop
   /usr/share/applications/qv4l2.desktop
   /usr/share/applications/qvidcap.desktop
-  /usr/share/applications/it.mijorus.smile.desktop
   /usr/share/applications/thunar*.desktop
   /var/lib/flatpak/exports/share/applications/org.torproject.torbrowser-launcher.settings.desktop
 )
