@@ -1,22 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-# Start dbus-launch before gsettings
-eval $(dbus-launch --sh-syntax)
-
-# Ensure that DBUS_SESSION_BUS_ADDRESS is correctly set
-export DBUS_SESSION_BUS_ADDRESS
-export DBUS_SESSION_BUS_PID
-
-# Debugging: Check dbus-launch is running correctly
-echo "DBUS_SESSION_BUS_ADDRESS: $DBUS_SESSION_BUS_ADDRESS"
-echo "DBUS_SESSION_BUS_PID: $DBUS_SESSION_BUS_PID"
-
-# Ensure gsettings can access the DBus session
-export $(dbus-launch --sh-syntax)
-
 export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
+
+# Start dbus-launch before gsettings
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 
 # GSettings - GNOME settings
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
@@ -30,9 +19,9 @@ gsettings set org.gnome.desktop.interface font-rgba-order "rgb"
 gsettings set org.gnome.desktop.interface text-scaling-factor 1
 gsettings set org.gnome.desktop.interface toolbar-style "both-horiz"
 gsettings set org.gnome.desktop.interface toolbar-icons-size "small"
-gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.sound event-sounds true
 gsettings set org.gnome.desktop.sound input-feedback-sounds false
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"  # Added color-scheme setting
 
 # GTK3 & GTK4 Config
 mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
@@ -53,7 +42,7 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
-gtk-application-prefer-dark-theme=1
+gtk-application-prefer-dark-theme=0
 EOF
 
 # Link GTK3 settings to GTK4
