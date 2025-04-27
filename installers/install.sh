@@ -70,6 +70,7 @@ sudo bash -c '
   cp -r dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -r dotcfg/sddm.conf /etc/sddm.conf &&
   bash dotcfg/wofi-fix.sh &&
+  bash dotcfg/set-theme.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
