@@ -3,8 +3,8 @@ io.github.flattool.Warehouse
 io.github.shiftey.Desktop
 com.heroicgameslauncher.hgl
 com.vysp3r.ProtonPlus
-org.localsend.localsend_app
 io.github.Qalculate
+org.localsend.localsend_app
 com.rustdesk.RustDesk
 io.ente.auth
 com.protonvpn.www
