@@ -25,3 +25,10 @@ class = "kitty-taskbar"
 size = "30% 80%"
 offset = "200%"
 
+[scratchpads.emote]
+animation  = "fromRight"
+command    = "smile"
+class      = "it.mijorus.smile"
+size       = "10% 25%"
+offset     = "200%"
+unfocus    = "hide"
