@@ -201,3 +201,8 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **com.protonvpn.www**
 - **org.torproject.torbrowser-launcher**
 </details>
+
+
+## ⚡ Note
+After installation, you may need to adjust the configuration for your specific monitor(s) in the `~/.config/hypr/hyprland.conf` file.<br>
+You can view your connected monitors and their properties by running the `hyprctl monitors` command in the terminal.
