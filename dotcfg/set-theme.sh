@@ -19,6 +19,7 @@ gsettings set org.gnome.desktop.interface font-rgba-order "rgb"
 gsettings set org.gnome.desktop.interface text-scaling-factor 1
 gsettings set org.gnome.desktop.interface toolbar-style "both-horiz"
 gsettings set org.gnome.desktop.interface toolbar-icons-size "small"
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.sound event-sounds true
 gsettings set org.gnome.desktop.sound input-feedback-sounds false
 
