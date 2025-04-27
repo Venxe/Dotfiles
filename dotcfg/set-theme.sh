@@ -12,7 +12,7 @@ export DBUS_SESSION_BUS_PID
 echo "DBUS_SESSION_BUS_ADDRESS: $DBUS_SESSION_BUS_ADDRESS"
 echo "DBUS_SESSION_BUS_PID: $DBUS_SESSION_BUS_PID"
 
-# Make sure gsettings can access the DBus session
+# Ensure gsettings can access the DBus session
 export $(dbus-launch --sh-syntax)
 
 export XCURSOR_THEME="Qogir-manjaro-dark"
