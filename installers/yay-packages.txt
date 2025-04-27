@@ -8,6 +8,7 @@ kora-icon-theme
 qogir-icon-theme
 clock-rs-git
 myfetch
+smile
 pipes-rs
 bastet
 spotify
