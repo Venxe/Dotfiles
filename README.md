@@ -108,9 +108,9 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **myfetch**
 - **eza**
 - **fd**
-- **btop**
 - **nnn**
 - **less**
+- **btop**
 - **cava**
 - **pulsemixer**
 - **clock-rs-git**
