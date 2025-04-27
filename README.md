@@ -77,23 +77,23 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 - **pacman-contrib**
 - **rsync**
+- **hypridle**
+- **hyprlock**
+- **hyprpicker**
 - **thunar**
-- **flatpak**
 - **gvfs**
-- **libgsf**
-- **tumbler**
-- **ffmpegthumbnailer**
 - **cpio**
-- **bleachbit**
-- **brightnessctl**
-- **gnome-keyring**
-- **gnome-network-displays**
+- **libgsf**
 - **bluez**
 - **blueman**
+- **tumbler**
+- **ffmpegthumbnailer**
+- **brightnessctl**
 - **wl-clip-persist**
-- **hypridle**
-- **hyprpicker**
-- **hyprlock**
+- **bleachbit**
+- **flatpak**
+- **gnome-keyring**
+- **gnome-network-displays**
 - **com.github.tchx84.Flatseal**
 - **io.github.flattool.Warehouse**
 - **com.rustdesk.RustDesk**
@@ -111,8 +111,8 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **btop**
 - **nnn**
 - **less**
-- **pulsemixer**
 - **cava**
+- **pulsemixer**
 - **clock-rs-git**
 </details>
 
@@ -122,19 +122,19 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **swww**
 - **waybar**
 - **swaync**
+- **gammastep**
 - **nwg-look**
 - **materia-gtk-theme**
 - **ttf-fira-sans**
 - **ttf-firacode-nerd**
 - **ttf-jetbrains-mono**
-- **kora-icon-theme**
-- **qogir-icon-theme**
 - **python-pywal16**
 - **python-pywalfox**
-- **gammastep**
-- **wlogout**
 - **hyprshot**
 - **pyprland**
+- **wlogout**
+- **kora-icon-theme**
+- **qogir-icon-theme**
 </details>
 
 <details>
@@ -158,10 +158,10 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **libreoffice-fresh**
 - **thunderbird**
 - **obsidian**
-- **xarchiver**
-- **7zip**
 - **code**
 - **neovim**
+- **xarchiver**
+- **7zip**
 - **cmake**
 - **meson**
 - **io.github.shiftey.Desktop**
