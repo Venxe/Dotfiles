@@ -80,7 +80,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **cpio**
 - **bluez**
 - **blueman**
-- **brightnessctl**
 - **wl-clip-persist**
 - **thunar**
 - **gvfs**
@@ -124,6 +123,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **hypridle**
 - **hyprlock**
 - **hyprpicker**
+- **brightnessctl**
 - **gammastep**
 - **nwg-look**
 - **materia-gtk-theme**
