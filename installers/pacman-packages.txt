@@ -1,5 +1,6 @@
 pacman-contrib
 rsync
+cpio
 flatpak
 fish
 starship
@@ -32,7 +33,6 @@ neovim
 code
 cmake
 meson
-cpio
 pulsemixer
 easyeffects
 lsp-plugins
