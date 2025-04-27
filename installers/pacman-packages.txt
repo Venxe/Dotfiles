@@ -19,8 +19,8 @@ ttf-firacode-nerd
 ttf-jetbrains-mono
 wl-clip-persist
 hypridle
-hyprpicker
 hyprlock
+hyprpicker
 thunar
 gvfs
 tumbler
