@@ -3,6 +3,7 @@ set -e
 
 # Start dbus-launch before gsettings
 export $(dbus-launch --sh-syntax)
+echo "DBUS_SESSION_BUS_ADDRESS: $DBUS_SESSION_BUS_ADDRESS"
 
 # Environment setup for gsettings and GTK
 export XCURSOR_THEME="Qogir-manjaro-dark"
