@@ -62,7 +62,7 @@ echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
 mkdir -p ~/Pictures/Wallpapers/walls
 
-echo "${CYAN}Installing configuration files...${RESET}"
+echo "${CYAN}Installing configuration...${RESET}"
 sudo bash -c '
   cp -r dotcfg/resolved.conf /etc/systemd/resolved.conf &&
   cp -r dotcfg/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf &&
