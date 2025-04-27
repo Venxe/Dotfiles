@@ -94,7 +94,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **gnome-network-displays**
 - **com.github.tchx84.Flatseal**
 - **io.github.flattool.Warehouse**
-- **com.rustdesk.RustDesk**
 </details>
 
 <details>
@@ -177,6 +176,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **org.telegram.desktop**
 - **it.mijorus.smile**
 - **io.github.halfmexican.Mingle**
+- **com.rustdesk.RustDesk**
 </details>
 
 <details>
