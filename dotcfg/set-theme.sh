@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+eval $(dbus-launch --sh-syntax)
+
 # GNOME GSettings ayarları
 gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
