@@ -7,7 +7,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "Materia-dark-compact"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 gsettings set org.gnome.desktop.interface cursor-theme "Qogir-manjaro-dark"
 gsettings set org.gnome.desktop.interface cursor-size 21
-gsettings set org.gnome.desktop.interface font-name "Fira Sans 11"
+gsettings set org.gnome.desktop.interface font-name "Fira Sans Regular 11"
 gsettings set org.gnome.desktop.interface font-hinting "slight"
 gsettings set org.gnome.desktop.interface font-antialiasing "grayscale"
 gsettings set org.gnome.desktop.interface font-rgba-order "rgb"
