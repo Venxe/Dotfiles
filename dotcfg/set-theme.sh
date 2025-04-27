@@ -2,10 +2,16 @@
 set -e
 
 # Start dbus-launch before gsettings
-export $(dbus-launch --sh-syntax)
-echo "DBUS_SESSION_BUS_ADDRESS: $DBUS_SESSION_BUS_ADDRESS"
+eval $(dbus-launch --sh-syntax)
 
-# Environment setup for gsettings and GTK
+# Ensure that DBUS_SESSION_BUS_ADDRESS is correctly set
+export DBUS_SESSION_BUS_ADDRESS
+export DBUS_SESSION_BUS_PID
+
+# Debugging: Check dbus-launch is running correctly
+echo "DBUS_SESSION_BUS_ADDRESS: $DBUS_SESSION_BUS_ADDRESS"
+echo "DBUS_SESSION_BUS_PID: $DBUS_SESSION_BUS_PID"
+
 export XCURSOR_THEME="Qogir-manjaro-dark"
 export XCURSOR_SIZE=21
 
