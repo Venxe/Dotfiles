@@ -42,7 +42,7 @@ gtk-xft-antialias=1
 gtk-xft-hinting=1
 gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
-gtk-application-prefer-dark-theme=0
+gtk-application-prefer-dark-theme=1
 EOF
 
 # Link GTK3 settings to GTK4
