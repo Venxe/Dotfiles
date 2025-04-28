@@ -78,8 +78,6 @@ bash dotcfg/set-theme.sh
 cp -r dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
-echo -e "${CYAN}Setting CPU governor to:${RESET} $(echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)"
-
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
     echo "${YELLOW}Enter your password to change the shell to Fish:${RESET}"
@@ -98,6 +96,7 @@ sudo bash -c '
   systemctl enable systemd-resolved &&
   systemctl enable bluetooth &&
   systemctl enable avahi-daemon
+  systemctl enable cpufreq-performance.service
 '
 systemctl --user enable pipewire.service pipewire-pulse.service
 
