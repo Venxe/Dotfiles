@@ -1,0 +1,11 @@
+[Unit]
+Description=Set CPU governor to performance and start GameMode
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu[0-9]*; do echo performance > $cpu/cpufreq/scaling_governor; done && gamemoded -r'
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
