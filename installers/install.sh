@@ -69,7 +69,7 @@ sudo bash -c '
   cp -r dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -r dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -r dotcfg/sddm.conf /etc/sddm.conf &&
-  cp -r dotcfg/cpufreq-performance.service /etc/systemd/system/cpufreq-performance.service &&
+  cp -r dotcfg/cpugov-gamemode.service /etc/systemd/system/cpugov-gamemode.service &&
   bash dotcfg/wofi-fix.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
@@ -97,7 +97,7 @@ sudo bash -c '
   systemctl enable systemd-resolved &&
   systemctl enable bluetooth &&
   systemctl enable avahi-daemon
-  systemctl enable cpufreq-performance.service
+  systemctl enable cpugov-gamemode.service
 '
 systemctl --user enable pipewire.service pipewire-pulse.service
 
