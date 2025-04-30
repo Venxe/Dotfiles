@@ -69,7 +69,7 @@ sudo bash -c '
   cp -r dotcfg/swappiness.conf /etc/sysctl.d/ &&
   cp -r dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -r dotcfg/sddm.conf /etc/sddm.conf &&
-  cp -r dotcfg/cpugov-performance.service /etc/systemd/system/cpugov-gamemode.service &&
+  cp -r dotcfg/cpugov-performance.service /etc/systemd/system/cpugov-performance.service &&
   bash dotcfg/wofi-fix.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
