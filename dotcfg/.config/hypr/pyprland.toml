@@ -27,18 +27,18 @@ size = "30% 80%"
 offset = "200%"
 unfocus    = "hide"
 
-[scratchpads.smile]
-animation  = "fromRight"
-command    = "smile"
-class      = "it.mijorus.smile"
-size       = "10% 25%"
-offset     = "200%"
-unfocus    = "hide"
-
 [scratchpads.passmanager]
 animation  = "fromTop"
 command    = "bitwarden-desktop"
 class      = "Bitwarden"
 size       = "40% 50%"
+offset     = "200%"
+unfocus    = "hide"
+
+[scratchpads.smile]
+animation  = "fromRight"
+command    = "smile"
+class      = "it.mijorus.smile"
+size       = "10% 25%"
 offset     = "200%"
 unfocus    = "hide"
