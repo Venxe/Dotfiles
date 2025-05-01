@@ -17,6 +17,7 @@ command = "kitty --class kitty-pulsemixer -e pulsemixer"
 class = "kitty-pulsemixer"
 size = "50% 20%"
 offset = "200%"
+unfocus    = "hide"
 
 [scratchpads.taskbar]
 animation = "fromLeft"
@@ -24,11 +25,20 @@ command = "kitty --class kitty-taskbar -e btop"
 class = "kitty-taskbar"
 size = "30% 80%"
 offset = "200%"
+unfocus    = "hide"
 
 [scratchpads.smile]
 animation  = "fromRight"
 command    = "smile"
 class      = "it.mijorus.smile"
 size       = "10% 25%"
+offset     = "200%"
+unfocus    = "hide"
+
+[scratchpads.passmanager]
+animation  = "fromTop"
+command    = "bitwarden-desktop"
+class      = "Bitwarden"
+size       = "40% 50%"
 offset     = "200%"
 unfocus    = "hide"
