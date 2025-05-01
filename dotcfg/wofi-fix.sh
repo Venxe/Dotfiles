@@ -8,8 +8,8 @@ declare -A exec_map=(
   [ncspot]="kitty -e ncspot"
   [bastet]="kitty -e bastet"
   [nnn]="env NNN_FIFO=/tmp/nnn.fifo NNN_PLUG=p:preview-tui kitty -e nnn -a -P p"
+  [bitwarden]="pypr toggle passmanager"
   [it.mijorus.smile]="pypr toggle smile"
-  [bitwarden.desktop]="pypr toggle passmanager"
 )
 
 hidden_list=(
