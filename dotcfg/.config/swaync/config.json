@@ -75,7 +75,7 @@
                 },
                 { 
                     "label": "󱕵",
-		    "command": "setsid bitwarden-desktop >/dev/null 2>&1 & swaync-client --close-panel"
+		    "command": "setsid io.ente.auth >/dev/null 2>&1 & swaync-client --close-panel"
                 },
                 {
                     "label": "",
