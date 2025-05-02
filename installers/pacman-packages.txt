@@ -44,6 +44,7 @@ lsp-plugins
 gst-plugins-bad
 calf
 obs-studio
+spotify-launcher
 ncspot
 yt-dlp
 libreoffice-fresh
