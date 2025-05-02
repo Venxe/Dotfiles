@@ -11,4 +11,3 @@ myfetch
 smile
 pipes-rs
 bastet
-spotify
