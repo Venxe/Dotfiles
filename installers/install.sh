@@ -34,12 +34,12 @@ sudo pacman -S --noconfirm reflector || error_exit "Failed to install reflector!
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --protocol https --save /etc/pacman.d/mirrorlist || echo "Failed to optimize mirrors!"
 
 echo "${CYAN}Installing Pacman packages...${RESET}"
-xargs -a installers/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
+xargs -a installers/packages/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
 echo "${CYAN}Removing Dolphin and Htop...${RESET}"
 pacman -Qq dolphin htop | sudo pacman -Rns - --noconfirm
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
-xargs -a installers/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
+xargs -a installers/packages/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
 
 echo "${CYAN}Installing Yay AUR helper...${RESET}"
 if ! command -v yay &> /dev/null; then
@@ -51,7 +51,7 @@ else
 fi
 
 echo "${CYAN}Installing Yay packages...${RESET}"
-xargs -a installers/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
+xargs -a installers/packages/yay-packages.txt -r yay -S --needed --noconfirm || error_exit "Failed to install Yay packages!"
 
 echo "${CYAN}Installing nnn plugins...${RESET}"
 mkdir -p ~/.config/nnn/plugins
@@ -70,12 +70,12 @@ sudo bash -c '
   cp -r dotcfg/sb-theme /usr/share/sddm/themes/ &&
   cp -r dotcfg/sddm.conf /etc/sddm.conf &&
   cp -r dotcfg/cpugov-performance.service /etc/systemd/system/cpugov-performance.service &&
-  bash dotcfg/wofi-fix.sh &&
+  bash installers/wofi-fix.sh &&
   timedatectl set-local-rtc 1 &&
   nmcli connection modify "Wired connection 1" ipv6.method ignore
   nmcli connection down "Wired connection 1" && sudo nmcli connection up "Wired connection 1"
 '
-bash dotcfg/set-theme.sh
+bash installers/set-theme.sh
 cp -r dotcfg/.config/* ~/.config/
 cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
 
