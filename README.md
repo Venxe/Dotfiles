@@ -217,9 +217,8 @@ You can view your connected monitors and their properties by running the `hyprct
 <summary>After signing in to Spotify, you must configure a few settings for applying Spicetify.</summary>
 
 ```
-spicetify backup apply
 spicetify config current_theme marketplace
 spicetify config custom_apps marketplace
-spicetify apply
+spicetify backup apply
 ```
 </details>
