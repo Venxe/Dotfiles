@@ -143,7 +143,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 - **mpv**
 - **swayimg**
-- **qt6-multimedia**
 - **easyeffects**
 - **lsp-plugins**
 - **gst-plugins-bad**
