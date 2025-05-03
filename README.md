@@ -141,9 +141,9 @@ Below is a comprehensive, categorized list of all applications installed automat
 <details>
 <summary>🎥 Multimedia & Audio</summary>
 
-- **qt6-multimedia**
 - **mpv**
 - **swayimg**
+- **qt6-multimedia**
 - **easyeffects**
 - **lsp-plugins**
 - **gst-plugins-bad**
