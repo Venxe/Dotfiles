@@ -39,6 +39,7 @@ ttf-firacode-nerd
 ttf-jetbrains-mono
 mpv
 swayimg
+qt6-multimedia
 easyeffects
 lsp-plugins
 gst-plugins-bad
