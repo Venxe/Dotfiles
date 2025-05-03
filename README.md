@@ -221,4 +221,9 @@ spicetify config current_theme marketplace
 spicetify config custom_apps marketplace
 spicetify backup apply
 ```
+
+I also use these marketplace items:
+- **Extensions:** Full Screen, Scanabbles
+- **Themes:** Comfy
+- **Snippets:** Hover Panels, Rounded Images, Auto-hide Friends, Pretty Lyrics, Smooth Progress/Volume Bar, Modern ScrollBar, Remove the Artist and Credits sections from the Sidebar
 </details>
