@@ -11,3 +11,5 @@ myfetch
 smile
 pipes-rs
 bastet
+spicetify-cli
+spicetify-marketplace-bin
