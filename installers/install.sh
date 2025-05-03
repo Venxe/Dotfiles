@@ -33,10 +33,10 @@ sudo pacman -Syu --noconfirm || error_exit "Failed to update package manager!"
 sudo pacman -S --noconfirm reflector || error_exit "Failed to install reflector!"
 sudo reflector --country "US,DE,TR,GR" --latest 10 --sort age --protocol https --save /etc/pacman.d/mirrorlist || echo "Failed to optimize mirrors!"
 
-echo "${CYAN}Installing Pacman packages...${RESET}"
-xargs -a installers/packages/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
 echo "${CYAN}Removing Dolphin and Htop...${RESET}"
 pacman -Qq dolphin htop | sudo pacman -Rns - --noconfirm
+echo "${CYAN}Installing Pacman packages...${RESET}"
+xargs -a installers/packages/pacman-packages.txt -r sudo pacman -S --needed --noconfirm || error_exit "Failed to install Pacman packages!"
 
 echo "${CYAN}Installing Flatpak applications...${RESET}"
 xargs -a installers/packages/flatpak-packages.txt -r flatpak install -y flathub --noninteractive || error_exit "Failed to install Flatpak applications!"
