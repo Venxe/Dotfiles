@@ -149,6 +149,8 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **calf**
 - **obs-studio**
 - **spotify**
+- **spicetify-cli**
+- **spicetify-marketplace-bin**
 - **ncspot**
 - **yt-dlp**
 </details>
