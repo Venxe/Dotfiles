@@ -208,13 +208,13 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 ## ⚡ Note
 <details>
-<summary>After installation, you may need to adjust the configuration for your specific monitor(s) in the "hyprland.conf" file.</summary>
+<summary>After installation, you may need to adjust the configuration for your specific monitor(s).</summary>
 
 You can view your connected monitors and their properties by running the `hyprctl monitors` command in the terminal.
 </details>
 
 <details>
-<summary>After signing in to Spotify, you must configure a few settings before applying Spicetify.</summary>
+<summary>After signing in to Spotify, you must configure a few settings for applying Spicetify.</summary>
 
 ```
 spicetify backup apply
