@@ -20,7 +20,7 @@ hidden_list=(
   /usr/share/applications/bvnc.desktop
   /usr/share/applications/calf.desktop
   /usr/share/applications/cmake-gui.desktop
-  /usr/share/applications/electron34.desktop
+  /usr/share/applications/electron*.desktop
   /usr/share/applications/fish.desktop
   /usr/share/applications/gammastep-indicator.desktop
   /usr/share/applications/kitty.desktop
