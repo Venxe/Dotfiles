@@ -206,7 +206,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 </details>
 
 
-## ⚡ Note
+## ⚡ Notes
 <details>
 <summary>After installation, you may need to adjust the configuration for your specific monitor(s).</summary>
 
