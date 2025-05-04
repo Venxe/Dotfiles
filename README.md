@@ -34,35 +34,31 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 ## ⌨️ Keybinds
 
-`SUPER + Q`  - Open Terminal
+`SUPER + Q`  - Launch Terminal
 
-`SUPER + E`  - Open File Manager
+`SUPER + E`  - Launch File Manager
 
-`SUPER + R`  - App Launcher
+`SUPER + R`  - Launch App Launcher
 
-`SUPER + C`  - Force Close Window
+`SUPER + C`  - Close Window
+
+`SUPER + F`  - Toggle Fullscreen
 
 `SUPER + V`  - Toggle Floating
 
 `SUPER + L`  - Lock Session
 
-`SUPER + F`  - Fullscreen
+`SUPER + M` - Kill Hyprland
 
 `SUPER + G`  - Audio Manager
 
 `SUPER + T`  - Task Manager
 
-`SUPER + M` - Force Close Hyprland
-
 `SUPER + W`  - Wallpaper Selector
 
-`SUPER + 0-9` - Switch Workspace
+`SUPER + 0-9` - Switch to Workspace
 
-`SUPER + SHIFT + 0-9` - Move to Workspace
-
-`ALT + E`  - Emote Selector
-
-`ALT + F4`  - Session Manager
+`SUPER + SHIFT + 0-9` - Move Window to Workspace
 
 > [!Tip]
 > For the full set of key bindings, please refer to `~/.config/hypr/hyprland.conf` file.
