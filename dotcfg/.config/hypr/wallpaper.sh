@@ -28,3 +28,4 @@ main() {
     source ~/.cache/wal/colors.sh && cp -r $wallpaper ~/wallpapers/pywallpaper.png
 }
 main
+hyprshade on vibrance
