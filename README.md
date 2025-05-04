@@ -52,7 +52,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + T`  - Open Task Manager
 
-`SUPER + G`  - Open Audio Manager
+`SUPER + A`  - Open Audio Manager
 
 `SUPER + W`  - Wallpaper Selector
 
