@@ -1,5 +1,6 @@
 python-pywal16
 python-pywalfox
+hyprshade
 hyprshot
 pyprland
 wlogout
