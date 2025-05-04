@@ -77,7 +77,7 @@ sudo bash -c '
 '
 bash installers/set-theme.sh
 cp -r dotcfg/.config/* ~/.config/
-cp dotcfg/wall-archlinux.png ~/Pictures/Wallpapers/walls/wall-archlinux.png
+cp dotcfg/code-linux-arch-01.jpg ~/Pictures/Wallpapers/walls/Coding/code-linux-arch-01.jpg
 
 echo "${CYAN}Changing default shell to Fish...${RESET}"
 while true; do
