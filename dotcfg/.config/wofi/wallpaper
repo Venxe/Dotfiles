@@ -9,5 +9,5 @@ term=kitty
 hide_scroll=true
 print_command=true
 insensitive=true
-columns=4
+columns=3
 image_size=150
