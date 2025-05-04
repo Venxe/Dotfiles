@@ -48,11 +48,11 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + L`  - Lock Session
 
-`SUPER + M` - Kill Hyprland
+`SUPER + M`  - Kill Hyprland
 
-`SUPER + G`  - Audio Manager
+`SUPER + T`  - Open Task Manager
 
-`SUPER + T`  - Task Manager
+`SUPER + G`  - Open Audio Manager
 
 `SUPER + W`  - Wallpaper Selector
 
