@@ -115,6 +115,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 - **swww**
 - **waybar**
 - **swaync**
+- **hyprshade**
 - **hypridle**
 - **hyprlock**
 - **hyprpicker**
