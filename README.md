@@ -14,7 +14,7 @@ The installation process is fully automated and specifically tailored to my pers
 
 🖥️ **Display Manager:** SDDM
 
-> [!WARNING]  
+> [!WARNING]
 > Running this setup may install software and configurations that could conflict with your preferences. You may want to review the [packages](https://github.com/Venxe/Dotfiles/tree/main/installers) before proceeding.
 
 
@@ -194,7 +194,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 <details>
 <summary>🔒 Security & Privacy</summary>
-  
+
 - **bitwarden**
 - **io.ente.auth**
 - **com.protonvpn.www**
