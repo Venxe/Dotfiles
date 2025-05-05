@@ -68,7 +68,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 Below is a comprehensive, categorized list of all applications installed automatically during setup:
 
-<details><summary>📦 System &amp; Package Management</summary>
+<details><summary>📦 System &amp; Package Management</summary><br>
 
 | Application            | Description                                         |
 | ---------------------- | --------------------------------------------------- |
@@ -92,7 +92,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | Flatseal               | GUI for Flatpak permissions                         |
 | Warehouse              | Flatpak app store frontend                          |
 
-</details> <details><summary>💻 Terminal &amp; CLI Tools</summary>
+</details> <details><summary>💻 Terminal &amp; CLI Tools</summary><br>
 
 | Application  | Description                             |
 | ------------ | --------------------------------------- |
@@ -109,7 +109,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | pulsemixer   | CLI mixer for PulseAudio                |
 | clock‑rs‑git | Terminal clock utility                  |
 
-</details> <details><summary>🎨 Desktop Customization &amp; Appearance</summary>
+</details> <details><summary>🎨 Desktop Customization &amp; Appearance</summary><br>
 
 | Application        | Description                           |
 | ------------------ | ------------------------------------- |
@@ -135,7 +135,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | kora‑icon‑theme    | Kora icon set                         |
 | qogir‑icon‑theme   | Qogir icon set                        |
 
-</details> <details><summary>🎥 Multimedia &amp; Audio</summary>
+</details> <details><summary>🎥 Multimedia &amp; Audio</summary><br>
 
 | Application               | Description                                     |
 | ------------------------- | ----------------------------------------------- |
@@ -153,7 +153,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | ncspot                    | Terminal Spotify client                         |
 | yt‑dlp                    | Download audio/video from web                   |
 
-</details> <details><summary>🛠️ Productivity &amp; Development</summary>
+</details> <details><summary>🛠️ Productivity &amp; Development</summary><br>
 
 | Application               | Description                 |
 | ------------------------- | --------------------------- |
@@ -167,7 +167,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | GitHub Desktop            | GUI for Git version control |
 | Qalculate!                | Scientific calculator       |
 
-</details> <details><summary>💬 Internet &amp; Communication</summary>
+</details> <details><summary>💬 Internet &amp; Communication</summary><br>
 
 | Application      | Description                      |
 | ---------------- | -------------------------------- |
@@ -179,7 +179,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | Mingle           | Emoji combiner                   |
 | RustDesk         | Remote‑desktop tool              |
 
-</details> <details><summary>🎮 Gaming &amp; Entertainment</summary>
+</details> <details><summary>🎮 Gaming &amp; Entertainment</summary><br>
 
 | Application           | Description                                    |
 | --------------------- | ---------------------------------------------- |
@@ -193,7 +193,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | Heroic Games Launcher | GUI for Epic/GOG games                         |
 | ProtonPlus            | GUI for Proton compatibility layer             |
 
-</details> <details><summary>🔒 Security &amp; Privacy</summary>
+</details> <details><summary>🔒 Security &amp; Privacy</summary><br>
 
 | Application          | Description                       |
 | -------------------- | --------------------------------- |
