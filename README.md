@@ -102,7 +102,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | myfetch      | Customizable info fetcher               |
 | eza          | Enhanced ls replacement                 |
 | fd           | Simple, fast file search                |
-| nnn          | High‑performance file manager           |
+| nnn          | Terminal based file manager             |
 | less         | Text pager                              |
 | btop         | Resource usage monitor                  |
 | cava         | Terminal audio visualizer               |
@@ -160,11 +160,11 @@ Below is a comprehensive, categorized list of all applications installed automat
 | LibreOffice Fresh         | Full office suite           |
 | Thunderbird               | Email and newsgroup client  |
 | Obsidian                  | Markdown‑based note‑taking  |
-| Visual Studio Code (code) | Extensible code editor      |
+| Visual Studio Code        | Extensible code editor      |
 | Neovim                    | Vim‑based modal editor      |
 | CMake                     | Build‑system generator      |
 | Meson                     | Fast build system           |
-| Desktop Entry Creator     | .desktop launcher generator |
+| GitHub Desktop            | GUI for Git version control |
 | Qalculate!                | Scientific calculator       |
 
 </details> <details><summary>💬 Internet &amp; Communication</summary>
@@ -175,8 +175,8 @@ Below is a comprehensive, categorized list of all applications installed automat
 | qBittorrent      | BitTorrent client                |
 | LocalSend        | P2P LAN file transfer            |
 | Telegram Desktop | Official Telegram client         |
-| Smile            | Privacy‑focused messenger        |
-| Mingle           | Community chat/event platform    |
+| Smile            | Customizable emoji picker        |
+| Mingle           | Emoji combiner                   |
 | RustDesk         | Remote‑desktop tool              |
 
 </details> <details><summary>🎮 Gaming &amp; Entertainment</summary>
