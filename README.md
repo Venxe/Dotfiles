@@ -84,9 +84,9 @@ Below is a comprehensive, categorized list of all applications installed automat
 | tumbler                | Thumbnail generation service                        |
 | ffmpegthumbnailer      | Video thumbnail creator                             |
 | 7zip                   | Multi‑format archive manager                        |
-| xarchiver              | GUI for various archive formats                     |
-| bleachbit              | Disk‑cleaning utility                               |
-| flatpak                | Sandbox‑based app distribution                      |
+| Xarchiver              | GUI for various archive formats                     |
+| BleachBit              | Disk‑cleaning utility                               |
+| Flatpak                | Sandbox‑based app distribution                      |
 | gnome‑keyring          | Credential storage daemon                           |
 | gnome‑network‑displays | Wireless display casting                            |
 | Flatseal               | GUI for Flatpak permissions                         |
@@ -198,7 +198,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 | Application          | Description                       |
 | -------------------- | --------------------------------- |
 | Bitwarden            | Encrypted password manager        |
-| io.ente.auth         | Multi‑factor authentication agent |
+| Ente Auth            | Multi‑factor authentication agent |
 | ProtonVPN            | Secure VPN client                 |
 | Tor Browser Launcher | Launches/updates Tor Browser      |
 
