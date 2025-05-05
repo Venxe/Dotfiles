@@ -68,138 +68,140 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 Below is a comprehensive, categorized list of all applications installed automatically during setup:
 
-<details>
-<summary>📦 System & Package Management</summary>
+<details><summary>📦 System &amp; Package Management</summary>
 
-- **pacman-contrib**
-- **rsync**
-- **cpio**
-- **bluez**
-- **blueman**
-- **wl-clip-persist**
-- **thunar**
-- **gvfs**
-- **libgsf**
-- **tumbler**
-- **ffmpegthumbnailer**
-- **7zip**
-- **xarchiver**
-- **bleachbit**
-- **flatpak**
-- **gnome-keyring**
-- **gnome-network-displays**
-- **com.github.tchx84.Flatseal**
-- **io.github.flattool.Warehouse**
-</details>
+| Application            | Description                                         |
+| ---------------------- | --------------------------------------------------- |
+| pacman‑contrib         | Extra scripts and tools for Pacman                  |
+| rsync                  | Fast file synchronization for local/remote backups  |
+| cpio                   | Creates and extracts System V archives              |
+| bluez                  | Core Bluetooth protocol stack                       |
+| blueman                | GTK front‑end for Bluetooth management              |
+| wl‑clip‑persist        | Wayland clipboard saver                             |
+| thunar                 | Lightweight file manager                            |
+| gvfs                   | Virtual file‑system for remote access               |
+| libgsf                 | Library for structured file formats                 |
+| tumbler                | Thumbnail generation service                        |
+| ffmpegthumbnailer      | Video thumbnail creator                             |
+| 7zip                   | Multi‑format archive manager                        |
+| xarchiver              | GUI for various archive formats                     |
+| bleachbit              | Disk‑cleaning utility                               |
+| flatpak                | Sandbox‑based app distribution                      |
+| gnome‑keyring          | Credential storage daemon                           |
+| gnome‑network‑displays | Wireless display casting                            |
+| Flatseal               | GUI for Flatpak permissions                         |
+| Warehouse              | Flatpak app store frontend                          |
 
-<details>
-<summary>💻 Terminal & CLI Tools</summary>
+</details> <details><summary>💻 Terminal &amp; CLI Tools</summary>
 
-- **fish**
-- **starship**
-- **fastfetch**
-- **myfetch**
-- **eza**
-- **fd**
-- **nnn**
-- **less**
-- **btop**
-- **cava**
-- **pulsemixer**
-- **clock-rs-git**
-</details>
+| Application  | Description                             |
+| ------------ | --------------------------------------- |
+| fish         | Interactive shell with autosuggestions  |
+| starship     | Fast, customizable shell prompt         |
+| fastfetch    | Quick system info display               |
+| myfetch      | Customizable info fetcher               |
+| eza          | Enhanced ls replacement                 |
+| fd           | Simple, fast file search                |
+| nnn          | High‑performance file manager           |
+| less         | Text pager                              |
+| btop         | Resource usage monitor                  |
+| cava         | Terminal audio visualizer               |
+| pulsemixer   | CLI mixer for PulseAudio                |
+| clock‑rs‑git | Terminal clock utility                  |
 
-<details>
-<summary>🎨 Desktop Customization & Appearance</summary>
+</details> <details><summary>🎨 Desktop Customization &amp; Appearance</summary>
 
-- **swww**
-- **waybar**
-- **swaync**
-- **hyprshade**
-- **hypridle**
-- **hyprlock**
-- **hyprpicker**
-- **brightnessctl**
-- **gammastep**
-- **nwg-look**
-- **materia-gtk-theme**
-- **ttf-fira-sans**
-- **ttf-firacode-nerd**
-- **ttf-jetbrains-mono**
-- **python-pywal16**
-- **python-pywalfox**
-- **hyprshot**
-- **pyprland**
-- **wlogout**
-- **kora-icon-theme**
-- **qogir-icon-theme**
-</details>
+| Application        | Description                           |
+| ------------------ | ------------------------------------- |
+| swww               | Wayland wallpaper manager             |
+| waybar             | Status bar for Sway/Hyprland          |
+| swaync             | Network indicator for Waybar          |
+| hyprshade          | Hyprland screen tone adjuster         |
+| hypridle           | Hyprland idle handler                 |
+| hyprlock           | Hyprland screen locker                |
+| hyprpicker         | Wayland color picker                  |
+| brightnessctl      | Adjust backlight via CLI              |
+| gammastep          | Time‑based color temperature adjuster |
+| nwg‑look           | GTK theme installer                   |
+| materia‑gtk‑theme  | Material‑style GTK theme              |
+| ttf‑fira‑sans      | Fira Sans font family                 |
+| ttf‑firacode‑nerd  | Fira Code with dev ligatures          |
+| ttf‑jetbrains‑mono | JetBrains Mono coding font            |
+| python‑pywal16     | Pywal for Python 3.10                 |
+| python‑pywalfox    | Apply Pywal themes to Firefox         |
+| hyprshot           | Hyprland screenshot tool              |
+| pyprland           | Python‑based Hyprland config manager  |
+| wlogout            | Wayland logout/menu UI                |
+| kora‑icon‑theme    | Kora icon set                         |
+| qogir‑icon‑theme   | Qogir icon set                        |
 
-<details>
-<summary>🎥 Multimedia & Audio</summary>
+</details> <details><summary>🎥 Multimedia &amp; Audio</summary>
 
-- **mpv**
-- **swayimg**
-- **qt6-multimedia**
-- **easyeffects**
-- **lsp-plugins**
-- **gst-plugins-bad**
-- **calf**
-- **obs-studio**
-- **spotify**
-- **spicetify-cli**
-- **spicetify-marketplace-bin**
-- **ncspot**
-- **yt-dlp**
-</details>
+| Application               | Description                                     |
+| ------------------------- | ----------------------------------------------- |
+| mpv                       | CLI media player with wide format support       |
+| swayimg                   | Wayland image viewer                            |
+| qt6‑multimedia            | Qt6 media codecs/plugins                        |
+| easyeffects               | Real‑time audio effects for PipeWire/PulseAudio |
+| lsp‑plugins               | Audio effect plugins for JACK/PipeWire          |
+| gst‑plugins‑bad           | Extra GStreamer codecs                          |
+| calf                      | JACK audio effects suite                        |
+| OBS Studio                | Screencast and live‑streaming app               |
+| Spotify                   | Music streaming client                          |
+| spicetify‑cli             | Customize Spotify client                        |
+| spicetify‑marketplace‑bin | Spicetify plugin/theme repository               |
+| ncspot                    | Terminal Spotify client                         |
+| yt‑dlp                    | Download audio/video from web                   |
 
-<details>
-<summary>🛠️ Productivity & Development</summary>
+</details> <details><summary>🛠️ Productivity &amp; Development</summary>
 
-- **libreoffice-fresh**
-- **thunderbird**
-- **obsidian**
-- **code**
-- **neovim**
-- **cmake**
-- **meson**
-- **io.github.shiftey.Desktop**
-- **io.github.Qalculate**
-</details>
+| Application               | Description                 |
+| ------------------------- | --------------------------- |
+| LibreOffice Fresh         | Full office suite           |
+| Thunderbird               | Email and newsgroup client  |
+| Obsidian                  | Markdown‑based note‑taking  |
+| Visual Studio Code (code) | Extensible code editor      |
+| Neovim                    | Vim‑based modal editor      |
+| CMake                     | Build‑system generator      |
+| Meson                     | Fast build system           |
+| Desktop Entry Creator     | .desktop launcher generator |
+| Qalculate!                | Scientific calculator       |
 
-<details>
-<summary>💬 Internet & Communication</summary>
+</details> <details><summary>💬 Internet &amp; Communication</summary>
 
-- **discord**
-- **qbittorrent**
-- **org.localsend.localsend_app**
-- **org.telegram.desktop**
-- **it.mijorus.smile**
-- **io.github.halfmexican.Mingle**
-- **com.rustdesk.RustDesk**
-</details>
+| Application      | Description                      |
+| ---------------- | -------------------------------- |
+| Discord          | Voice, video, text chat platform |
+| qBittorrent      | BitTorrent client                |
+| LocalSend        | P2P LAN file transfer            |
+| Telegram Desktop | Official Telegram client         |
+| Smile            | Privacy‑focused messenger        |
+| Mingle           | Community chat/event platform    |
+| RustDesk         | Remote‑desktop tool              |
 
-<details>
-<summary>🎮 Gaming & Entertainment</summary>
+</details> <details><summary>🎮 Gaming &amp; Entertainment</summary>
 
-- **steam**
-- **lutris**
-- **bastet**
-- **cmatrix**
-- **pipes-rs**
-- **lolcat**
-- **asciiquarium**
-- **com.heroicgameslauncher.hgl**
-- **com.vysp3r.ProtonPlus**
-</details>
+| Application           | Description                                    |
+| --------------------- | ---------------------------------------------- |
+| Steam                 | Game distribution and community platform       |
+| Lutris                | Manages Windows/Linux games via Wine/emulators |
+| Bastet                | Terminal Tetris clone                          |
+| cmatrix               | “Matrix” rain in terminal                      |
+| pipes‑rs              | ASCII pipeline simulation                      |
+| lolcat                | Rainbow‑colorizes text                         |
+| asciiquarium          | Animated ASCII aquarium                        |
+| Heroic Games Launcher | GUI for Epic/GOG games                         |
+| ProtonPlus            | GUI for Proton compatibility layer             |
 
-<details>
-<summary>🔒 Security & Privacy</summary>
+</details> <details><summary>🔒 Security &amp; Privacy</summary>
 
-- **bitwarden**
-- **io.ente.auth**
-- **com.protonvpn.www**
-- **org.torproject.torbrowser-launcher**
+| Application          | Description                       |
+| -------------------- | --------------------------------- |
+| Bitwarden            | Encrypted password manager        |
+| io.ente.auth         | Multi‑factor authentication agent |
+| ProtonVPN            | Secure VPN client                 |
+| Tor Browser Launcher | Launches/updates Tor Browser      |
+
 </details>
 
 
