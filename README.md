@@ -54,7 +54,7 @@ git clone https://github.com/Venxe/Dotfiles.git && cd Dotfiles && chmod +x insta
 
 `SUPER + A`  - Open Audio Manager
 
-`SUPER + W`  - Wallpaper Selector
+`SUPER + W`  - Wallpaper Manager
 
 `SUPER + 0-9` - Switch to Workspace
 
