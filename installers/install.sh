@@ -60,7 +60,7 @@ wget --quiet https://raw.githubusercontent.com/jarun/nnn/master/plugins/preview-
 
 echo "${CYAN}Creating necessary directories...${RESET}"
 mkdir -p ~/Desktop ~/Documents ~/Downloads ~/Games ~/Music ~/Public ~/Templates ~/Videos
-mkdir -p ~/Pictures/Wallpapers/walls
+mkdir -p ~/Pictures/Wallpapers/walls/Coding
 
 echo "${CYAN}Installing configurations...${RESET}"
 sudo bash -c '
