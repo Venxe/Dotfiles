@@ -1,3 +1,4 @@
+base-devel
 pacman-contrib
 rsync
 cpio
