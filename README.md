@@ -72,6 +72,7 @@ Below is a comprehensive, categorized list of all applications installed automat
 
 | Application            | Description                                         |
 | ---------------------- | --------------------------------------------------- |
+| base-devel             | Essential tools for building and compiling packages |
 | pacman‑contrib         | Extra scripts and tools for Pacman                  |
 | rsync                  | Fast file synchronization for local/remote backups  |
 | cpio                   | Creates and extracts System V archives              |
