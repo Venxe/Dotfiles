@@ -198,7 +198,6 @@ Below is a comprehensive, categorized list of all applications installed automat
 | Application          | Description                       |
 | -------------------- | --------------------------------- |
 | Bitwarden            | Encrypted password manager        |
-| Ente Auth            | Multi‑factor authentication agent |
 | ProtonVPN            | Secure VPN client                 |
 | Tor Browser Launcher | Launches/updates Tor Browser      |
 
