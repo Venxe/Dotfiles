@@ -8,6 +8,5 @@ io.github.halfmexican.Mingle
 com.rustdesk.RustDesk
 com.heroicgameslauncher.hgl
 com.vysp3r.ProtonPlus
-io.ente.auth
 com.protonvpn.www
 org.torproject.torbrowser-launcher
